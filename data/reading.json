@@ -1,0 +1,24 @@
+{
+  "current": {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "assignedBy": "Dad",
+    "progress": 48,
+    "coverInitials": "HP"
+  },
+  "finished": [
+    {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "rating": 5,
+      "review": "I loved the magic world! The dragons were so cool."
+    },
+    {
+      "title": "Wonder",
+      "author": "R.J. Palacio",
+      "rating": 4,
+      "review": "A really nice story about being kind to everyone."
+    }
+  ],
+  "monthlyGoal": { "target": 2, "completed": 1 }
+}

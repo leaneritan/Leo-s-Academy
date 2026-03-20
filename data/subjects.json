@@ -1,0 +1,108 @@
+[
+  {
+    "id": "english",
+    "name": "English",
+    "icon": "menu_book",
+    "tag": "Core Subject",
+    "description": "Our World · Fundamentals · School book",
+    "locked": false,
+    "completedLessons": 18,
+    "totalLessons": 24,
+    "lessons": [
+      {
+        "id": "l1-u1-g1",
+        "title": "Basic Sentence Building",
+        "unit": "Our World: Unit 1",
+        "focus": "Present Simple",
+        "structure": "Subject + Verb + Object",
+        "duration": 30,
+        "xpReward": 450,
+        "completed": false,
+        "content": {
+          "heroEmoji": "📚",
+          "heroTitle": "Basic Sentence Building",
+          "heroSubtitle": "Learn how to construct simple sentences to describe your world.",
+          "sections": [
+            {
+              "type": "explanation",
+              "title": "The Golden Rule",
+              "body": "In English, a standard sentence follows a specific order. This helps the listener understand who is doing what.",
+              "bullets": [
+                { "term": "The Subject", "detail": "This is the person or thing performing the action (e.g., Leo, The Cat, I)." },
+                { "term": "The Verb", "detail": "This is the action itself (e.g., runs, eats, reads)." },
+                { "term": "The Object", "detail": "This is what receives the action (e.g., a book, an apple, the ball)." }
+              ]
+            },
+            {
+              "type": "examples",
+              "title": "Practice Examples",
+              "items": [
+                { "sentence": "I eat an apple.", "emoji": "🍎" },
+                { "sentence": "She reads a book.", "emoji": "📖" },
+                { "sentence": "The dog runs fast.", "emoji": "🐕" },
+                { "sentence": "We play football.", "emoji": "⚽" }
+              ]
+            },
+            {
+              "type": "reminder",
+              "label": "Quick Reminder",
+              "title": "Subject-Verb Agreement",
+              "body": "Remember: when the subject is \"He\", \"She\", or \"It\", we usually add an -s to the end of the verb. Example: He walks to school."
+            }
+          ],
+          "teacherNote": "This unit focuses on the foundations. Don't worry about complex tenses yet. Mastery of the Subject + Verb + Object structure is the key to confidence!",
+          "quiz": [
+            {
+              "question": "Which sentence is correct?",
+              "options": ["She walk to school.", "She walks to school.", "She walking to school.", "She walked to school."],
+              "correct": 1
+            },
+            {
+              "question": "What is the SUBJECT in: 'Leo reads a book.'?",
+              "options": ["reads", "a book", "Leo", "book"],
+              "correct": 2
+            },
+            {
+              "question": "What is the VERB in: 'The cat eats fish.'?",
+              "options": ["The cat", "fish", "The", "eats"],
+              "correct": 3
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "computer-science",
+    "name": "Computer Science",
+    "icon": "terminal",
+    "tag": "Tech Path",
+    "description": "Python · Robotics",
+    "locked": false,
+    "completedLessons": 5,
+    "totalLessons": 20,
+    "lessons": []
+  },
+  {
+    "id": "art",
+    "name": "Art",
+    "icon": "palette",
+    "tag": "Creative",
+    "description": "Perspective · Color Theory",
+    "locked": true,
+    "completedLessons": 0,
+    "totalLessons": 15,
+    "lessons": []
+  },
+  {
+    "id": "music",
+    "name": "Music",
+    "icon": "music_note",
+    "tag": "Creative",
+    "description": "Rhythm · Digital Composition",
+    "locked": true,
+    "completedLessons": 0,
+    "totalLessons": 12,
+    "lessons": []
+  }
+]
