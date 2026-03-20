@@ -1,0 +1,10 @@
+{
+  "Mon": [{ "subject": "English", "time": "09:00 AM", "color": "primary-container" }],
+  "Tue": [{ "subject": "Math", "time": "10:30 AM", "color": "tertiary" }],
+  "Wed": [
+    { "subject": "Science", "time": "09:00 AM", "color": "secondary-container" },
+    { "subject": "English", "time": "02:00 PM", "color": "primary-container" }
+  ],
+  "Thu": [{ "subject": "History", "time": "11:00 AM", "color": "tertiary" }],
+  "Fri": []
+}
