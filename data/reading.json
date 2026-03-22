@@ -1,23 +1,40 @@
 {
   "current": {
+    "id": "hp1",
     "title": "Harry Potter and the Philosopher's Stone",
+    "titleJapanese": "ハリー・ポッターと賢者の石",
     "author": "J.K. Rowling",
+    "authorJapanese": "J.K.ローリング",
     "assignedBy": "Dad",
     "progress": 48,
-    "coverInitials": "HP"
+    "language": "English",
+    "status": "reading"
   },
   "finished": [
     {
+      "id": "hobbit",
       "title": "The Hobbit",
+      "titleJapanese": "ホビットの冒険",
       "author": "J.R.R. Tolkien",
+      "authorJapanese": "J.R.R.トールキン",
+      "language": "English",
+      "status": "finished",
       "rating": 5,
-      "review": "I loved the magic world! The dragons were so cool."
+      "review": "I loved the magic world! The dragons were so cool.",
+      "dateFinished": "2024-09-15"
     },
     {
+      "id": "wonder",
       "title": "Wonder",
+      "titleJapanese": "ワンダー",
       "author": "R.J. Palacio",
+      "authorJapanese": "R・J・パラシオ",
+      "coverImage": "/books/wonder.jpg",
+      "language": "Japanese",
+      "status": "finished",
       "rating": 4,
-      "review": "A really nice story about being kind to everyone."
+      "review": "みんなに親切にすることについての素敵な物語。",
+      "dateFinished": "2024-10-01"
     }
   ],
   "monthlyGoal": { "target": 2, "completed": 1 }
