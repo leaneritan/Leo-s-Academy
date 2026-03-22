@@ -11,7 +11,7 @@ export default function ReadingPage() {
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-20">
       <div className="lg:col-span-4">
         <header className="mb-10 lg:hidden">
-          <h1 className="text-4xl font-bold text-on-surface mb-2">My Library</h1>
+          <h1 className="text-4xl font-bold text-on-surface mb-2 tracking-tighter">My Library</h1>
           <p className="text-on-surface-variant font-medium">Keep track of your reading adventures.</p>
         </header>
 
@@ -34,8 +34,8 @@ export default function ReadingPage() {
           </div>
 
           <div className="grid grid-cols-1 gap-6">
-            {readingData.finished.map((book, idx) => (
-              <FinishedBookCard key={idx} {...book} />
+            {readingData.finished.map((book) => (
+              <FinishedBookCard key={book.id} {...book} />
             ))}
           </div>
         </div>
