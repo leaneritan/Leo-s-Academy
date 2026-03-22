@@ -34,8 +34,8 @@ export default function ReadingPage() {
           </div>
 
           <div className="grid grid-cols-1 gap-6">
-            {readingData.finished.map((book, idx) => (
-              <FinishedBookCard key={idx} {...book} />
+            {readingData.finished.map((book) => (
+              <FinishedBookCard key={book.id} {...book} />
             ))}
           </div>
         </div>
