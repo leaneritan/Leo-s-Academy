@@ -15,6 +15,15 @@ type Grammar = {
     notes: string[];
   };
   examples?: { question: string; answer: string }[];
+  levelUp?: {
+    title: string;
+    content: string;
+    categories: {
+      label: string;
+      color: string;
+      examples: { question: string; answer: string }[];
+    }[];
+  };
   quiz?: { question: string; options: string[]; correct: number }[];
   gameSentences?: string[][];
 };
@@ -60,6 +69,55 @@ function GrammarChart({ chart }: { chart: Grammar['chart'] }) {
           <span key={i} className="text-[0.75rem] font-bold text-primary bg-primary/10 px-3 py-1 rounded-full">
             {note}
           </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── Level Up Tab ────────────────────────────────────────────────────────────
+function LevelUpTab({ levelUp }: { levelUp: NonNullable<Grammar['levelUp']> }) {
+  return (
+    <div className="space-y-10">
+      {/* Mini Lesson Box */}
+      <div className="bg-primary/5 border border-primary/15 rounded-2xl p-6 md:p-8">
+        <div className="flex items-center gap-3 mb-4">
+          <span className="text-2xl">💡</span>
+          <h3 className="text-xl font-bold text-primary">{levelUp.title}</h3>
+        </div>
+        <p className="text-on-surface-variant leading-relaxed">
+          {levelUp.content}
+        </p>
+      </div>
+
+      {/* Categories */}
+      <div className="space-y-12">
+        {levelUp.categories.map((cat, i) => (
+          <div key={i}>
+            <div className="flex items-center gap-3 mb-6">
+              <span className={`px-3 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-widest ${cat.color}`}>
+                {cat.label}
+              </span>
+              <div className="h-px bg-outline-variant/20 flex-1" />
+            </div>
+
+            <div className="grid gap-4">
+              {cat.examples.map((ex, j) => (
+                <div
+                  key={j}
+                  className="bg-surface-container-lowest rounded-2xl px-6 py-5 shadow-[0_12px_32px_-4px_rgba(24,28,29,0.06)] flex items-start gap-4 hover:-translate-y-0.5 transition-transform"
+                >
+                  <div className="w-8 h-8 rounded-full bg-primary/5 flex items-center justify-center shrink-0">
+                    <span className="material-symbols-outlined text-primary text-sm">auto_awesome</span>
+                  </div>
+                  <div>
+                    <p className="font-bold text-on-surface text-base">{ex.question}</p>
+                    <p className="text-on-surface-variant mt-1">{ex.answer}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         ))}
       </div>
     </div>
@@ -394,7 +452,7 @@ function GameTab({ sentences }: { sentences: NonNullable<Grammar['gameSentences'
 
 // ─── Main Page ────────────────────────────────────────────────────────────────
 export default function GrammarLessonPage({ params }: { params: { lessonId: string } }) {
-  const [tab, setTab] = useState<'lesson' | 'quiz' | 'game'>('lesson');
+  const [tab, setTab] = useState<'lesson' | 'levelUp' | 'quiz' | 'game'>('lesson');
 
   const found = findLesson(params.lessonId);
   if (!found) {
@@ -411,8 +469,9 @@ export default function GrammarLessonPage({ params }: { params: { lessonId: stri
 
   const { grammar, unit, level } = found;
 
-  const tabs: { id: typeof tab; label: string; icon: string }[] = [
+  const tabs: { id: typeof tab; label: string; icon: string; emoji?: string }[] = [
     { id: 'lesson', label: 'Lesson', icon: 'menu_book' },
+    { id: 'levelUp', label: 'Level Up', icon: 'rocket', emoji: '🚀' },
     { id: 'quiz', label: 'Quiz', icon: 'quiz' },
     { id: 'game', label: 'Game', icon: 'sports_esports' },
   ];
@@ -464,7 +523,11 @@ export default function GrammarLessonPage({ params }: { params: { lessonId: stri
                   : 'text-on-surface-variant hover:text-on-surface'
               }`}
             >
-              <span className="material-symbols-outlined text-[18px]">{t.icon}</span>
+              {t.emoji ? (
+                <span className="text-base">{t.emoji}</span>
+              ) : (
+                <span className="material-symbols-outlined text-[18px]">{t.icon}</span>
+              )}
               {t.label}
             </button>
           ))}
@@ -472,6 +535,7 @@ export default function GrammarLessonPage({ params }: { params: { lessonId: stri
 
         {/* Tab content */}
         {tab === 'lesson' && <LessonTab grammar={grammar} />}
+        {tab === 'levelUp' && grammar.levelUp && <LevelUpTab levelUp={grammar.levelUp} />}
         {tab === 'quiz' && grammar.quiz && <QuizTab quiz={grammar.quiz} />}
         {tab === 'game' && grammar.gameSentences && <GameTab sentences={grammar.gameSentences} />}
       </div>
