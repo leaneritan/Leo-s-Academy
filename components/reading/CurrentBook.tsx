@@ -3,19 +3,31 @@ import React from 'react';
 import Card from '../ui/Card';
 import ProgressBar from '../ui/ProgressBar';
 import Button from '../ui/Button';
+import Link from 'next/link';
 import readingData from '@/data/reading.json';
 
 const CurrentBook = () => {
   const { current } = readingData;
+  const initials = current.title
+    .split(' ')
+    .map((word: string) => word[0])
+    .join('')
+    .slice(0, 2)
+    .toUpperCase();
+
   return (
     <Card className="p-10 mb-12">
       <div className="flex flex-col md:flex-row gap-10">
-        <div className="w-48 h-64 bg-primary-container rounded-2xl flex-shrink-0 flex items-center justify-center text-on-primary-container font-extrabold text-4xl shadow-2xl relative overflow-hidden group">
-          {current.coverInitials}
+        <Link href={`/reading/${current.id}`} className="w-48 h-64 bg-primary-container rounded-2xl flex-shrink-0 flex items-center justify-center text-on-primary-container font-extrabold text-4xl shadow-2xl relative overflow-hidden group cursor-pointer">
+          {current.coverImage ? (
+            <img src={current.coverImage} alt={current.title} className="w-full h-full object-cover" />
+          ) : (
+            <span>{initials}</span>
+          )}
           <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
             <span className="material-symbols-outlined text-5xl">open_in_new</span>
           </div>
-        </div>
+        </Link>
 
         <div className="flex-1 space-y-8">
           <div className="flex items-center justify-between">
@@ -29,14 +41,19 @@ const CurrentBook = () => {
           </div>
 
           <div>
-            <h2 className="text-4xl font-extrabold text-on-surface mb-2 leading-tight">{current.title}</h2>
+            <div className="flex items-center gap-3 mb-2">
+              <h2 className="text-4xl font-extrabold text-on-surface leading-tight">{current.title}</h2>
+              {current.language === 'Japanese' && <span className="text-2xl">🇯🇵</span>}
+            </div>
             <p className="text-lg text-on-surface-variant font-medium">by {current.author}</p>
           </div>
 
           <div className="flex items-center gap-6">
-            <Button variant="ghost" className="font-bold uppercase tracking-widest text-xs border border-outline-variant/20 hover:border-primary/40 px-6">
-              Write a note
-            </Button>
+            <Link href={`/reading/${current.id}`}>
+              <Button variant="ghost" className="font-bold uppercase tracking-widest text-xs border border-outline-variant/20 hover:border-primary/40 px-6">
+                Write a note
+              </Button>
+            </Link>
             <div className="flex-1">
               <div className="flex justify-between text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-2">
                 <span>Progress</span>
