@@ -7,7 +7,9 @@ import BottomNavBar from './BottomNavBar';
 
 const AppShell = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
-  const isLessonView = pathname?.startsWith('/lesson/');
+  const isLessonView =
+    pathname?.startsWith('/lesson/') ||
+    /\/subjects\/english\/our-world\/l\d/.test(pathname ?? '');
 
   if (isLessonView) {
     return (

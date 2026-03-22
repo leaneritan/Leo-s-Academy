@@ -1,0 +1,196 @@
+{
+  "levels": [
+    {
+      "id": "l1",
+      "number": 1,
+      "title": "Level 1",
+      "comingSoon": false,
+      "units": [
+        {
+          "id": "u1",
+          "number": 1,
+          "title": "Unit 1",
+          "comingSoon": false,
+          "grammars": [
+            {
+              "id": "l1-u1-g1",
+              "number": 1,
+              "title": "Yes/No questions with it's",
+              "comingSoon": false,
+              "breadcrumb": "Level 1 · Unit 1 · Grammar 1",
+              "vocabulary": [
+                { "word": "classroom", "emoji": "🏫" },
+                { "word": "board", "emoji": "📋" },
+                { "word": "pencil", "emoji": "✏️" },
+                { "word": "pen", "emoji": "🖊️" },
+                { "word": "crayon", "emoji": "🖍️" },
+                { "word": "paper", "emoji": "📄" },
+                { "word": "map", "emoji": "🗺️" },
+                { "word": "clock", "emoji": "🕐" },
+                { "word": "computer", "emoji": "💻" },
+                { "word": "table", "emoji": "🪑" }
+              ],
+              "chart": {
+                "rows": [
+                  {
+                    "question": "Is it a pencil?",
+                    "answer": "Yes, it is. It's a pencil."
+                  },
+                  {
+                    "question": "Is it a crayon?",
+                    "answer": "No, it isn't. It's a pen."
+                  }
+                ],
+                "notes": ["It's = It is", "Isn't = It is not"]
+              },
+              "examples": [
+                { "question": "Is it a pencil?", "answer": "Yes, it is. It's a pencil." },
+                { "question": "Is it a pen?", "answer": "No, it isn't. It's a crayon." },
+                { "question": "Is it a clock?", "answer": "Yes, it is. It's a clock." },
+                { "question": "Is it a map?", "answer": "No, it isn't. It's a board." },
+                { "question": "Is it a computer?", "answer": "Yes, it is. It's a computer." },
+                { "question": "Is it a table?", "answer": "No, it isn't. It's a desk." },
+                { "question": "Is it a crayon?", "answer": "Yes, it is. It's a crayon." },
+                { "question": "Is it a book?", "answer": "No, it isn't. It's a notebook." },
+                { "question": "Is it a classroom?", "answer": "Yes, it is. It's a classroom." },
+                { "question": "Is it a paper?", "answer": "No, it isn't. It's a picture." }
+              ],
+              "quiz": [
+                {
+                  "question": "Which question is correct?",
+                  "options": [
+                    "It is a pencil?",
+                    "Are it a pencil?",
+                    "Is it a pencil?",
+                    "Is a pencil it?"
+                  ],
+                  "correct": 2
+                },
+                {
+                  "question": "What does \"it's\" mean?",
+                  "options": ["It is", "Is it", "It was", "Isn't"],
+                  "correct": 0
+                },
+                {
+                  "question": "Which answer is correct for \"Is it a pen?\"",
+                  "options": [
+                    "Yes, it is. It's a pen.",
+                    "Yes, it are. It's a pen.",
+                    "No, it isn't. It's a pen.",
+                    "Yes, it is. It's a pencil."
+                  ],
+                  "correct": 0
+                },
+                {
+                  "question": "What does \"isn't\" mean?",
+                  "options": ["It is", "Is not", "It was", "Is it"],
+                  "correct": 1
+                },
+                {
+                  "question": "\"Is it a clock?\" Leo says \"Yes, it is.\" Correct?",
+                  "options": ["Yes", "No"],
+                  "correct": 0
+                }
+              ],
+              "gameSentences": [
+                ["Is", "it", "a", "pencil"],
+                ["It's", "a", "pencil"],
+                ["Is", "it", "a", "pen"],
+                ["It's", "a", "crayon"],
+                ["Is", "it", "a", "clock"],
+                ["Is", "it", "a", "computer"],
+                ["Is", "it", "a", "map"],
+                ["It's", "a", "classroom"],
+                ["Is", "it", "a", "crayon"],
+                ["It's", "a", "notebook"]
+              ]
+            },
+            {
+              "id": "l1-u1-g2",
+              "number": 2,
+              "title": "Grammar 2",
+              "comingSoon": true
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "number": 2,
+          "title": "Unit 2",
+          "comingSoon": true,
+          "grammars": []
+        },
+        {
+          "id": "u3",
+          "number": 3,
+          "title": "Unit 3",
+          "comingSoon": true,
+          "grammars": []
+        },
+        {
+          "id": "u4",
+          "number": 4,
+          "title": "Unit 4",
+          "comingSoon": true,
+          "grammars": []
+        },
+        {
+          "id": "u5",
+          "number": 5,
+          "title": "Unit 5",
+          "comingSoon": true,
+          "grammars": []
+        },
+        {
+          "id": "u6",
+          "number": 6,
+          "title": "Unit 6",
+          "comingSoon": true,
+          "grammars": []
+        },
+        {
+          "id": "u7",
+          "number": 7,
+          "title": "Unit 7",
+          "comingSoon": true,
+          "grammars": []
+        },
+        {
+          "id": "u8",
+          "number": 8,
+          "title": "Unit 8",
+          "comingSoon": true,
+          "grammars": []
+        },
+        {
+          "id": "u9",
+          "number": 9,
+          "title": "Unit 9",
+          "comingSoon": true,
+          "grammars": []
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "number": 2,
+      "title": "Level 2",
+      "comingSoon": true,
+      "units": []
+    },
+    {
+      "id": "l3",
+      "number": 3,
+      "title": "Level 3",
+      "comingSoon": true,
+      "units": []
+    },
+    {
+      "id": "l4",
+      "number": 4,
+      "title": "Level 4",
+      "comingSoon": true,
+      "units": []
+    }
+  ]
+}
