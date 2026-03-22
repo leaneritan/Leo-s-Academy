@@ -6,13 +6,13 @@
   - Local:        http://localhost:3000
 
  ✓ Starting...
- ✓ Ready in 1682ms
+ ✓ Ready in 1770ms
  ○ Compiling /subjects/english/our-world/[lessonId] ...
- ✓ Compiled /subjects/english/our-world/[lessonId] in 6.5s (561 modules)
- ✓ Compiled in 730ms (270 modules)
- GET /subjects/english/our-world/l1-u1-g1 200 in 8093ms
+ ✓ Compiled /subjects/english/our-world/[lessonId] in 6.4s (561 modules)
+ ✓ Compiled in 587ms (270 modules)
+ GET /subjects/english/our-world/l1-u1-g1 200 in 7877ms
  ○ Compiling /_not-found ...
- ✓ Compiled /_not-found in 4.3s (541 modules)
- GET /avatar.png 404 in 4413ms
- GET /subjects/english/our-world/l1-u1-g1 200 in 68ms
- GET /avatar.png 404 in 64ms
+ ✓ Compiled /_not-found in 4.1s (541 modules)
+ GET /avatar.png 404 in 4258ms
+ GET /subjects/english/our-world/l1-u1-g1 200 in 66ms
+ GET /avatar.png 404 in 49ms
