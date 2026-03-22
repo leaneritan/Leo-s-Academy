@@ -17,18 +17,48 @@
               "number": 1,
               "title": "Yes/No questions with it's",
               "comingSoon": false,
-              "breadcrumb": "Level 1 · Unit 1 · Grammar 1",
+              "breadcrumb": "Level 1 \u00b7 Unit 1 \u00b7 Grammar 1",
               "vocabulary": [
-                { "word": "classroom", "emoji": "🏫" },
-                { "word": "board", "emoji": "📋" },
-                { "word": "pencil", "emoji": "✏️" },
-                { "word": "pen", "emoji": "🖊️" },
-                { "word": "crayon", "emoji": "🖍️" },
-                { "word": "paper", "emoji": "📄" },
-                { "word": "map", "emoji": "🗺️" },
-                { "word": "clock", "emoji": "🕐" },
-                { "word": "computer", "emoji": "💻" },
-                { "word": "table", "emoji": "🪑" }
+                {
+                  "word": "classroom",
+                  "emoji": "\ud83c\udfeb"
+                },
+                {
+                  "word": "board",
+                  "emoji": "\ud83d\udccb"
+                },
+                {
+                  "word": "pencil",
+                  "emoji": "\u270f\ufe0f"
+                },
+                {
+                  "word": "pen",
+                  "emoji": "\ud83d\udd8a\ufe0f"
+                },
+                {
+                  "word": "crayon",
+                  "emoji": "\ud83d\udd8d\ufe0f"
+                },
+                {
+                  "word": "paper",
+                  "emoji": "\ud83d\udcc4"
+                },
+                {
+                  "word": "map",
+                  "emoji": "\ud83d\uddfa\ufe0f"
+                },
+                {
+                  "word": "clock",
+                  "emoji": "\ud83d\udd50"
+                },
+                {
+                  "word": "computer",
+                  "emoji": "\ud83d\udcbb"
+                },
+                {
+                  "word": "table",
+                  "emoji": "\ud83e\ude91"
+                }
               ],
               "chart": {
                 "rows": [
@@ -41,62 +71,125 @@
                     "answer": "No, it isn't. It's a pen."
                   }
                 ],
-                "notes": ["It's = It is", "Isn't = It is not"]
+                "notes": [
+                  "It's = It is",
+                  "Isn't = It is not"
+                ]
               },
               "examples": [
-                { "question": "Is it a pencil?", "answer": "Yes, it is. It's a pencil." },
-                { "question": "Is it a pen?", "answer": "No, it isn't. It's a crayon." },
-                { "question": "Is it a clock?", "answer": "Yes, it is. It's a clock." },
-                { "question": "Is it a map?", "answer": "No, it isn't. It's a board." },
-                { "question": "Is it a computer?", "answer": "Yes, it is. It's a computer." },
-                { "question": "Is it a table?", "answer": "No, it isn't. It's a desk." },
-                { "question": "Is it a crayon?", "answer": "Yes, it is. It's a crayon." },
-                { "question": "Is it a book?", "answer": "No, it isn't. It's a notebook." },
-                { "question": "Is it a classroom?", "answer": "Yes, it is. It's a classroom." },
-                { "question": "Is it a paper?", "answer": "No, it isn't. It's a picture." }
+                {
+                  "question": "Is it a pencil?",
+                  "answer": "Yes, it is. It's a pencil."
+                },
+                {
+                  "question": "Is it a pen?",
+                  "answer": "No, it isn't. It's a crayon."
+                },
+                {
+                  "question": "Is it a clock?",
+                  "answer": "Yes, it is. It's a clock."
+                },
+                {
+                  "question": "Is it a map?",
+                  "answer": "No, it isn't. It's a board."
+                },
+                {
+                  "question": "Is it a computer?",
+                  "answer": "Yes, it is. It's a computer."
+                },
+                {
+                  "question": "Is it a table?",
+                  "answer": "No, it isn't. It's a desk."
+                },
+                {
+                  "question": "Is it a crayon?",
+                  "answer": "Yes, it is. It's a crayon."
+                },
+                {
+                  "question": "Is it a book?",
+                  "answer": "No, it isn't. It's a notebook."
+                },
+                {
+                  "question": "Is it a classroom?",
+                  "answer": "Yes, it is. It's a classroom."
+                },
+                {
+                  "question": "Is it a paper?",
+                  "answer": "No, it isn't. It's a picture."
+                }
               ],
               "levelUp": {
-                "title": "Is it...? — Beyond the Classroom",
-                "content": "You already know how to ask 'Is it a pencil?' Great! But we use 'Is it...?' for so many more things in real life. We use it to ask about the weather, about time, about food, about animals, and even about feelings. Any time you want to ask YES or NO about ONE thing — use 'Is it...?'",
+                "title": "Is it...? \u2014 Beyond the Classroom",
+                "content": "You already know how to ask 'Is it a pencil?' Great! But we use 'Is it...?' for so many more things in real life. We use it to ask about the weather, about time, about food, about animals, and even about feelings. Any time you want to ask YES or NO about ONE thing \u2014 use 'Is it...?'",
                 "categories": [
                   {
                     "label": "About Weather",
                     "color": "bg-blue-100 text-blue-700",
                     "examples": [
-                      { "question": "Is it cold today?", "answer": "Yes, it is. Wear your jacket!" },
-                      { "question": "Is it raining?", "answer": "No, it isn't. You don't need an umbrella." }
+                      {
+                        "question": "Is it cold today?",
+                        "answer": "Yes, it is. Wear your jacket!"
+                      },
+                      {
+                        "question": "Is it raining?",
+                        "answer": "No, it isn't. You don't need an umbrella."
+                      }
                     ]
                   },
                   {
                     "label": "About Food",
                     "color": "bg-orange-100 text-orange-700",
                     "examples": [
-                      { "question": "Is it spicy?", "answer": "Yes, it is. Be careful!" },
-                      { "question": "Is it delicious?", "answer": "Yes, it is. I love it!" }
+                      {
+                        "question": "Is it spicy?",
+                        "answer": "Yes, it is. Be careful!"
+                      },
+                      {
+                        "question": "Is it delicious?",
+                        "answer": "Yes, it is. I love it!"
+                      }
                     ]
                   },
                   {
                     "label": "About Animals",
                     "color": "bg-green-100 text-green-700",
                     "examples": [
-                      { "question": "Is it dangerous?", "answer": "No, it isn't. It's friendly." },
-                      { "question": "Is it a mammal?", "answer": "Yes, it is. It has fur." }
+                      {
+                        "question": "Is it dangerous?",
+                        "answer": "No, it isn't. It's friendly."
+                      },
+                      {
+                        "question": "Is it a mammal?",
+                        "answer": "Yes, it is. It has fur."
+                      }
                     ]
                   },
                   {
                     "label": "About Time",
                     "color": "bg-purple-100 text-purple-700",
                     "examples": [
-                      { "question": "Is it time for lunch?", "answer": "Yes, it is. Let's eat!" },
-                      { "question": "Is it late?", "answer": "No, it isn't. We have time." }
+                      {
+                        "question": "Is it time for lunch?",
+                        "answer": "Yes, it is. Let's eat!"
+                      },
+                      {
+                        "question": "Is it late?",
+                        "answer": "No, it isn't. We have time."
+                      }
                     ]
                   },
                   {
                     "label": "About Feelings",
                     "color": "bg-pink-100 text-pink-700",
                     "examples": [
-                      { "question": "Is it fun?", "answer": "Yes, it is. I want to play again!" },
-                      { "question": "Is it difficult?", "answer": "No, it isn't. I understand." }
+                      {
+                        "question": "Is it fun?",
+                        "answer": "Yes, it is. I want to play again!"
+                      },
+                      {
+                        "question": "Is it difficult?",
+                        "answer": "No, it isn't. I understand."
+                      }
                     ]
                   }
                 ]
@@ -114,7 +207,12 @@
                 },
                 {
                   "question": "What does \"it's\" mean?",
-                  "options": ["It is", "Is it", "It was", "Isn't"],
+                  "options": [
+                    "It is",
+                    "Is it",
+                    "It was",
+                    "Isn't"
+                  ],
                   "correct": 0
                 },
                 {
@@ -129,26 +227,179 @@
                 },
                 {
                   "question": "What does \"isn't\" mean?",
-                  "options": ["It is", "Is not", "It was", "Is it"],
+                  "options": [
+                    "It is",
+                    "Is not",
+                    "It was",
+                    "Is it"
+                  ],
                   "correct": 1
                 },
                 {
                   "question": "\"Is it a clock?\" Leo says \"Yes, it is.\" Correct?",
-                  "options": ["Yes", "No"],
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "question": "Is it cold today? Leo answers \"Yes, it is.\" Which response is correct?",
+                  "options": [
+                    "Yes, it is.",
+                    "Yes, it are.",
+                    "No, it isn't.",
+                    "Yes, they are."
+                  ],
+                  "correct": 0
+                },
+                {
+                  "question": "Which sentence uses \"Is it...?\" correctly?",
+                  "options": [
+                    "Is it raining?",
+                    "Are it raining?",
+                    "It is raining?",
+                    "Is raining it?"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "question": "\"Is it dangerous?\" \u2014 What does this question mean?",
+                  "options": [
+                    "Where is the danger?",
+                    "We are asking YES or NO about one dangerous thing",
+                    "How many dangers are there?",
+                    "Who is dangerous?"
+                  ],
+                  "correct": 1
+                },
+                {
+                  "question": "Fill in the blank: \"___ it delicious?\"",
+                  "options": [
+                    "Are",
+                    "Am",
+                    "Is",
+                    "Be"
+                  ],
+                  "correct": 2
+                },
+                {
+                  "question": "Which answer is correct for \"Is it fun?\"",
+                  "options": [
+                    "Yes, it is.",
+                    "Yes, they are.",
+                    "No, it aren't.",
+                    "Yes, it are."
+                  ],
+                  "correct": 0
+                },
+                {
+                  "question": "\"Is it a mammal?\" \u2014 Leo answers \"Yes, it is. It has fur.\" Is this correct?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "question": "Which is a real-world use of \"Is it...?\"",
+                  "options": [
+                    "Is it time for lunch?",
+                    "Are they time for lunch?",
+                    "Is they lunch time?",
+                    "Time is it lunch?"
+                  ],
                   "correct": 0
                 }
               ],
               "gameSentences": [
-                ["Is", "it", "a", "pencil"],
-                ["It's", "a", "pencil"],
-                ["Is", "it", "a", "pen"],
-                ["It's", "a", "crayon"],
-                ["Is", "it", "a", "clock"],
-                ["Is", "it", "a", "computer"],
-                ["Is", "it", "a", "map"],
-                ["It's", "a", "classroom"],
-                ["Is", "it", "a", "crayon"],
-                ["It's", "a", "notebook"]
+                [
+                  "Is",
+                  "it",
+                  "a",
+                  "pencil"
+                ],
+                [
+                  "It's",
+                  "a",
+                  "pencil"
+                ],
+                [
+                  "Is",
+                  "it",
+                  "a",
+                  "pen"
+                ],
+                [
+                  "It's",
+                  "a",
+                  "crayon"
+                ],
+                [
+                  "Is",
+                  "it",
+                  "a",
+                  "clock"
+                ],
+                [
+                  "Is",
+                  "it",
+                  "a",
+                  "computer"
+                ],
+                [
+                  "Is",
+                  "it",
+                  "a",
+                  "map"
+                ],
+                [
+                  "It's",
+                  "a",
+                  "classroom"
+                ],
+                [
+                  "Is",
+                  "it",
+                  "a",
+                  "crayon"
+                ],
+                [
+                  "It's",
+                  "a",
+                  "notebook"
+                ],
+                [
+                  "Is",
+                  "it",
+                  "cold",
+                  "today?"
+                ],
+                [
+                  "Yes,",
+                  "it",
+                  "is.",
+                  "Wear",
+                  "your",
+                  "jacket!"
+                ],
+                [
+                  "Is",
+                  "it",
+                  "spicy?"
+                ],
+                [
+                  "Is",
+                  "it",
+                  "time",
+                  "for",
+                  "lunch?"
+                ],
+                [
+                  "Is",
+                  "it",
+                  "fun?"
+                ]
               ]
             },
             {
