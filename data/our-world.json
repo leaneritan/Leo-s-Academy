@@ -405,8 +405,317 @@
             {
               "id": "l1-u1-g2",
               "number": 2,
-              "title": "Grammar 2",
-              "comingSoon": true
+              "title": "What and How many",
+              "comingSoon": false,
+              "breadcrumb": "Level 1 \u00b7 Unit 1 \u00b7 Grammar 2",
+              "chart": {
+                "rows": [
+                  {
+                    "question": "What is it?",
+                    "answer": "It's a table."
+                  },
+                  {
+                    "question": "What color is it?",
+                    "answer": "It's yellow."
+                  },
+                  {
+                    "question": "How many pencils?",
+                    "answer": "Three."
+                  }
+                ],
+                "notes": [
+                  "What = asks about a thing",
+                  "How many = asks about a number"
+                ]
+              },
+              "explanation": "We use WHAT to ask about a thing. We use WHAT COLOR to ask about color. We use HOW MANY to ask about a number. Remember: How many + plural noun.",
+              "examples": [
+                {
+                  "question": "What is it?",
+                  "answer": "It's a board."
+                },
+                {
+                  "question": "What is it?",
+                  "answer": "It's a pencil."
+                },
+                {
+                  "question": "What color is it?",
+                  "answer": "It's red."
+                },
+                {
+                  "question": "What color is it?",
+                  "answer": "It's blue."
+                },
+                {
+                  "question": "How many pencils?",
+                  "answer": "Three pencils."
+                },
+                {
+                  "question": "How many pens?",
+                  "answer": "Two pens."
+                },
+                {
+                  "question": "What is it?",
+                  "answer": "It's a clock."
+                },
+                {
+                  "question": "What color is it?",
+                  "answer": "It's green."
+                },
+                {
+                  "question": "How many crayons?",
+                  "answer": "Five crayons."
+                },
+                {
+                  "question": "What is it?",
+                  "answer": "It's a computer."
+                }
+              ],
+              "levelUp": {
+                "title": "What and How many \u2014 In Real Life",
+                "content": "You use WHAT every single day! What is your name? What is your favorite food? What time is it? And HOW MANY helps you count everything around you \u2014 how many friends, how many books, how many goals did your favorite team score!",
+                "categories": [
+                  {
+                    "label": "About Identity",
+                    "color": "bg-blue-100 text-blue-700",
+                    "examples": [
+                      {
+                        "question": "What is your name?",
+                        "answer": "It's Leo."
+                      },
+                      {
+                        "question": "What is your favorite sport?",
+                        "answer": "It's soccer."
+                      }
+                    ]
+                  },
+                  {
+                    "label": "About Food",
+                    "color": "bg-orange-100 text-orange-700",
+                    "examples": [
+                      {
+                        "question": "What is it?",
+                        "answer": "It's a hamburger."
+                      },
+                      {
+                        "question": "What color is it?",
+                        "answer": "It's brown and yellow."
+                      }
+                    ]
+                  },
+                  {
+                    "label": "About Numbers",
+                    "color": "bg-green-100 text-green-700",
+                    "examples": [
+                      {
+                        "question": "How many players are on a soccer team?",
+                        "answer": "Eleven players."
+                      },
+                      {
+                        "question": "How many goals did he score?",
+                        "answer": "Three goals."
+                      }
+                    ]
+                  },
+                  {
+                    "label": "About School",
+                    "color": "bg-purple-100 text-purple-700",
+                    "examples": [
+                      {
+                        "question": "What is your favorite subject?",
+                        "answer": "It's English."
+                      },
+                      {
+                        "question": "How many students are in your class?",
+                        "answer": "Twenty students."
+                      }
+                    ]
+                  },
+                  {
+                    "label": "About Daily Life",
+                    "color": "bg-pink-100 text-pink-700",
+                    "examples": [
+                      {
+                        "question": "What time is it?",
+                        "answer": "It's three o'clock."
+                      },
+                      {
+                        "question": "How many days until the weekend?",
+                        "answer": "Two days."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "quiz": [
+                {
+                  "question": "Which question asks about a THING?",
+                  "options": [
+                    "How many?",
+                    "What is it?",
+                    "Where is it?",
+                    "Who is it?"
+                  ],
+                  "correct": 1
+                },
+                {
+                  "question": "Which question asks about a NUMBER?",
+                  "options": [
+                    "What is it?",
+                    "What color?",
+                    "How many?",
+                    "Where?"
+                  ],
+                  "correct": 2
+                },
+                {
+                  "question": "\"What is it?\" Leo answers \"It's a pencil.\" Correct?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "question": "Which is correct?",
+                  "options": [
+                    "How many pencil?",
+                    "How many pencils?",
+                    "How many a pencil?",
+                    "What many pencils?"
+                  ],
+                  "correct": 1
+                },
+                {
+                  "question": "\"What color is it?\" Leo says \"It's blue.\" Correct?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "question": "Which answer is correct for \"How many crayons?\"",
+                  "options": [
+                    "It's a crayon.",
+                    "Five crayons.",
+                    "It's five.",
+                    "Crayons five."
+                  ],
+                  "correct": 1
+                },
+                {
+                  "question": "\"What is your name?\" \u2014 What word starts this question?",
+                  "options": [
+                    "How",
+                    "Where",
+                    "What",
+                    "Who"
+                  ],
+                  "correct": 2
+                },
+                {
+                  "question": "How many players are on a soccer team?",
+                  "options": [
+                    "Ten",
+                    "Eleven",
+                    "Twelve",
+                    "Nine"
+                  ],
+                  "correct": 1
+                },
+                {
+                  "question": "Which question is about color?",
+                  "options": [
+                    "What is it?",
+                    "How many?",
+                    "What color is it?",
+                    "Where is it?"
+                  ],
+                  "correct": 2
+                },
+                {
+                  "question": "\"How many days until the weekend?\" Leo says \"Two days.\" Is this a correct use of How many?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "question": "Fill in: \"___ is it? It's a clock.\"",
+                  "options": [
+                    "How many",
+                    "Where",
+                    "What",
+                    "Who"
+                  ],
+                  "correct": 2
+                },
+                {
+                  "question": "Which uses \"What\" correctly?",
+                  "options": [
+                    "What is your favorite sport?",
+                    "What are many goals?",
+                    "What players on the team?",
+                    "What many pencils?"
+                  ],
+                  "correct": 0
+                }
+              ],
+              "gameSentences": [
+                [
+                  "What",
+                  "is",
+                  "it?"
+                ],
+                [
+                  "It's",
+                  "a",
+                  "table."
+                ],
+                [
+                  "What",
+                  "color",
+                  "is",
+                  "it?"
+                ],
+                [
+                  "It's",
+                  "yellow."
+                ],
+                [
+                  "How",
+                  "many",
+                  "pencils?"
+                ],
+                [
+                  "Three",
+                  "pencils."
+                ],
+                [
+                  "What",
+                  "is",
+                  "your",
+                  "name?"
+                ],
+                [
+                  "It's",
+                  "Leo."
+                ],
+                [
+                  "How",
+                  "many",
+                  "goals?"
+                ],
+                [
+                  "What",
+                  "is",
+                  "your",
+                  "favorite",
+                  "sport?"
+                ]
+              ]
             }
           ]
         },
@@ -414,8 +723,648 @@
           "id": "u2",
           "number": 2,
           "title": "Unit 2",
-          "comingSoon": true,
-          "grammars": []
+          "comingSoon": false,
+          "grammars": [
+            {
+              "id": "l1-u2-g1",
+              "number": 1,
+              "title": "To be: is, are",
+              "comingSoon": false,
+              "breadcrumb": "Level 1 \u00b7 Unit 2 \u00b7 Grammar 1",
+              "chart": {
+                "rows": [
+                  {
+                    "question": "What is it?",
+                    "answer": "It's a bird."
+                  },
+                  {
+                    "question": "What are they?",
+                    "answer": "They're birds."
+                  }
+                ],
+                "notes": [
+                  "One thing = It's | Two or more = They're",
+                  "It's = It is | They're = They are"
+                ]
+              },
+              "explanation": "We use IS for one thing. We use ARE for two or more things. It's is short for It is. They're is short for They are.",
+              "examples": [
+                {
+                  "question": "What is it?",
+                  "answer": "It's a flower."
+                },
+                {
+                  "question": "What is it?",
+                  "answer": "It's a tree."
+                },
+                {
+                  "question": "What are they?",
+                  "answer": "They're trees."
+                },
+                {
+                  "question": "What is it?",
+                  "answer": "It's a river."
+                },
+                {
+                  "question": "What are they?",
+                  "answer": "They're rivers."
+                },
+                {
+                  "question": "What is it?",
+                  "answer": "It's a mountain."
+                },
+                {
+                  "question": "What are they?",
+                  "answer": "They're mountains."
+                },
+                {
+                  "question": "What is it?",
+                  "answer": "It's a bird."
+                },
+                {
+                  "question": "What are they?",
+                  "answer": "They're birds."
+                },
+                {
+                  "question": "What is it?",
+                  "answer": "It's a cloud."
+                }
+              ],
+              "levelUp": {
+                "title": "Is and Are \u2014 Everywhere!",
+                "content": "IS and ARE are the two most important words in English. We use them every single day. IS is for one person, one thing, or one place. ARE is for you, we, they, or more than one thing. Once you master IS and ARE, English becomes much easier!",
+                "categories": [
+                  {
+                    "label": "About People",
+                    "color": "bg-blue-100 text-blue-700",
+                    "examples": [
+                      {
+                        "question": "He is my best friend.",
+                        "answer": ""
+                      },
+                      {
+                        "question": "They are my classmates.",
+                        "answer": ""
+                      }
+                    ]
+                  },
+                  {
+                    "label": "About Places",
+                    "color": "bg-orange-100 text-orange-700",
+                    "examples": [
+                      {
+                        "question": "It is a big stadium.",
+                        "answer": ""
+                      },
+                      {
+                        "question": "They are beautiful mountains.",
+                        "answer": ""
+                      }
+                    ]
+                  },
+                  {
+                    "label": "About Animals",
+                    "color": "bg-green-100 text-green-700",
+                    "examples": [
+                      {
+                        "question": "It is a fast cheetah.",
+                        "answer": ""
+                      },
+                      {
+                        "question": "They are colorful butterflies.",
+                        "answer": ""
+                      }
+                    ]
+                  },
+                  {
+                    "label": "About Things",
+                    "color": "bg-purple-100 text-purple-700",
+                    "examples": [
+                      {
+                        "question": "It is a new video game.",
+                        "answer": ""
+                      },
+                      {
+                        "question": "They are my favorite soccer boots.",
+                        "answer": ""
+                      }
+                    ]
+                  },
+                  {
+                    "label": "About Feelings",
+                    "color": "bg-pink-100 text-pink-700",
+                    "examples": [
+                      {
+                        "question": "He is very excited about the match.",
+                        "answer": ""
+                      },
+                      {
+                        "question": "They are happy because their team won.",
+                        "answer": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              "quiz": [
+                {
+                  "question": "Which is correct for ONE thing?",
+                  "options": [
+                    "They're a bird.",
+                    "It's a bird.",
+                    "Are a bird.",
+                    "Is birds."
+                  ],
+                  "correct": 1
+                },
+                {
+                  "question": "Which is correct for TWO things?",
+                  "options": [
+                    "It's birds.",
+                    "Is they birds.",
+                    "They're birds.",
+                    "Are it birds."
+                  ],
+                  "correct": 2
+                },
+                {
+                  "question": "\"What is it?\" Leo says \"It's a tree.\" Correct?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "question": "What does \"They're\" mean?",
+                  "options": [
+                    "They is",
+                    "They are",
+                    "It is",
+                    "They were"
+                  ],
+                  "correct": 1
+                },
+                {
+                  "question": "Which is correct?",
+                  "options": [
+                    "What are it?",
+                    "What is they?",
+                    "What are they?",
+                    "What is are?"
+                  ],
+                  "correct": 2
+                },
+                {
+                  "question": "\"What are they?\" Leo says \"They're mountains.\" Correct?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "question": "Choose the correct sentence:",
+                  "options": [
+                    "He are my friend.",
+                    "He is my friend.",
+                    "He am my friend.",
+                    "Is he friend."
+                  ],
+                  "correct": 1
+                },
+                {
+                  "question": "Choose the correct sentence:",
+                  "options": [
+                    "They is my classmates.",
+                    "They are my classmates.",
+                    "They am classmates.",
+                    "Are they classmate."
+                  ],
+                  "correct": 1
+                },
+                {
+                  "question": "\"It is a big stadium.\" Which word can replace \"It is\"?",
+                  "options": [
+                    "They're",
+                    "Is it",
+                    "It's",
+                    "Are"
+                  ],
+                  "correct": 2
+                },
+                {
+                  "question": "\"They are beautiful mountains.\" Which word can replace \"They are\"?",
+                  "options": [
+                    "It's",
+                    "They're",
+                    "Is",
+                    "Are it"
+                  ],
+                  "correct": 1
+                },
+                {
+                  "question": "Which sentence is about TWO or more things?",
+                  "options": [
+                    "It's a river.",
+                    "They're rivers.",
+                    "It's rivers.",
+                    "Is a river."
+                  ],
+                  "correct": 1
+                },
+                {
+                  "question": "\"They are happy because their team won.\" Is this correct English?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correct": 0
+                }
+              ],
+              "gameSentences": [
+                [
+                  "What",
+                  "is",
+                  "it?"
+                ],
+                [
+                  "It's",
+                  "a",
+                  "flower."
+                ],
+                [
+                  "What",
+                  "are",
+                  "they?"
+                ],
+                [
+                  "They're",
+                  "birds."
+                ],
+                [
+                  "It",
+                  "is",
+                  "a",
+                  "mountain."
+                ],
+                [
+                  "They",
+                  "are",
+                  "my",
+                  "classmates."
+                ],
+                [
+                  "He",
+                  "is",
+                  "my",
+                  "best",
+                  "friend."
+                ],
+                [
+                  "It's",
+                  "a",
+                  "new",
+                  "video",
+                  "game."
+                ],
+                [
+                  "They're",
+                  "beautiful",
+                  "mountains."
+                ],
+                [
+                  "They",
+                  "are",
+                  "happy."
+                ]
+              ]
+            },
+            {
+              "id": "l1-u2-g2",
+              "number": 2,
+              "title": "To be: Where and in/on",
+              "comingSoon": false,
+              "breadcrumb": "Level 1 \u00b7 Unit 2 \u00b7 Grammar 2",
+              "chart": {
+                "rows": [
+                  {
+                    "question": "Where is the butterfly?",
+                    "answer": "It's on the flower."
+                  },
+                  {
+                    "question": "Where are the clouds?",
+                    "answer": "They're in the sky."
+                  }
+                ],
+                "notes": [
+                  "IN = inside something | ON = on top of / on a surface"
+                ]
+              },
+              "explanation": "We use WHERE to ask about a place. We answer with IN or ON. Use IN when something is inside: in the sky, in the box, in the classroom. Use ON when something is on a surface: on the wall, on the table, on the floor.",
+              "examples": [
+                {
+                  "question": "Where is the clock?",
+                  "answer": "It's on the wall."
+                },
+                {
+                  "question": "Where is the map?",
+                  "answer": "It's on the wall."
+                },
+                {
+                  "question": "Where is the computer?",
+                  "answer": "It's on the table."
+                },
+                {
+                  "question": "Where are the birds?",
+                  "answer": "They're in the sky."
+                },
+                {
+                  "question": "Where is the moon?",
+                  "answer": "It's in the sky."
+                },
+                {
+                  "question": "Where is the sun?",
+                  "answer": "It's in the sky."
+                },
+                {
+                  "question": "Where is the book?",
+                  "answer": "It's on the desk."
+                },
+                {
+                  "question": "Where are the clouds?",
+                  "answer": "They're in the sky."
+                },
+                {
+                  "question": "Where is the pencil?",
+                  "answer": "It's on the table."
+                },
+                {
+                  "question": "Where is the rock?",
+                  "answer": "It's on the ground."
+                }
+              ],
+              "levelUp": {
+                "title": "Where? In and On \u2014 In Real Life",
+                "content": "WHERE, IN, and ON are words you use every single day. Where is my phone? It's on the table. Where is Leo? He's in the classroom. Where is the ball? It's in the goal! Once you know IN and ON, you can describe where anything is.",
+                "categories": [
+                  {
+                    "label": "At Home",
+                    "color": "bg-blue-100 text-blue-700",
+                    "examples": [
+                      {
+                        "question": "Where is the TV?",
+                        "answer": "It's on the wall."
+                      },
+                      {
+                        "question": "Where is the food?",
+                        "answer": "It's in the kitchen."
+                      }
+                    ]
+                  },
+                  {
+                    "label": "At School",
+                    "color": "bg-orange-100 text-orange-700",
+                    "examples": [
+                      {
+                        "question": "Where is the teacher?",
+                        "answer": "She's in the classroom."
+                      },
+                      {
+                        "question": "Where are the books?",
+                        "answer": "They're on the shelf."
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Outside",
+                    "color": "bg-green-100 text-green-700",
+                    "examples": [
+                      {
+                        "question": "Where is the ball?",
+                        "answer": "It's on the grass."
+                      },
+                      {
+                        "question": "Where are the players?",
+                        "answer": "They're on the field."
+                      }
+                    ]
+                  },
+                  {
+                    "label": "In Nature",
+                    "color": "bg-purple-100 text-purple-700",
+                    "examples": [
+                      {
+                        "question": "Where is the fish?",
+                        "answer": "It's in the river."
+                      },
+                      {
+                        "question": "Where are the stars?",
+                        "answer": "They're in the sky."
+                      }
+                    ]
+                  },
+                  {
+                    "label": "About Leo",
+                    "color": "bg-pink-100 text-pink-700",
+                    "examples": [
+                      {
+                        "question": "Where is Leo?",
+                        "answer": "He's in his room."
+                      },
+                      {
+                        "question": "Where is his soccer ball?",
+                        "answer": "It's on the floor."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "quiz": [
+                {
+                  "question": "\"Where is the clock?\" What does WHERE ask about?",
+                  "options": [
+                    "Time",
+                    "Color",
+                    "Place",
+                    "Number"
+                  ],
+                  "correct": 2
+                },
+                {
+                  "question": "The bird is ___ the sky.",
+                  "options": [
+                    "on",
+                    "in",
+                    "at",
+                    "is"
+                  ],
+                  "correct": 1
+                },
+                {
+                  "question": "The book is ___ the desk.",
+                  "options": [
+                    "in",
+                    "are",
+                    "on",
+                    "where"
+                  ],
+                  "correct": 2
+                },
+                {
+                  "question": "\"Where are the clouds?\" Leo says \"They're in the sky.\" Correct?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "question": "Which is correct?",
+                  "options": [
+                    "Where is the pencil? It's on the table.",
+                    "Where is the pencil? It's in the table.",
+                    "Where is the pencil? They're on the table.",
+                    "Where are the pencil? It's on the table."
+                  ],
+                  "correct": 0
+                },
+                {
+                  "question": "\"Where is the fish?\" Leo says \"It's in the river.\" Correct?",
+                  "options": [
+                    "Yes",
+                    "No"
+                  ],
+                  "correct": 0
+                },
+                {
+                  "question": "The food is ___ the kitchen.",
+                  "options": [
+                    "on",
+                    "in",
+                    "where",
+                    "are"
+                  ],
+                  "correct": 1
+                },
+                {
+                  "question": "The TV is ___ the wall.",
+                  "options": [
+                    "in",
+                    "where",
+                    "on",
+                    "are"
+                  ],
+                  "correct": 2
+                },
+                {
+                  "question": "\"Where are the books?\" \u2014 which answer is correct?",
+                  "options": [
+                    "It's on the shelf.",
+                    "They're on the shelf.",
+                    "They're in the shelf.",
+                    "It's in the shelf."
+                  ],
+                  "correct": 1
+                },
+                {
+                  "question": "Where is Leo? He's ___ his room.",
+                  "options": [
+                    "on",
+                    "at",
+                    "in",
+                    "where"
+                  ],
+                  "correct": 2
+                },
+                {
+                  "question": "The soccer ball is ___ the floor.",
+                  "options": [
+                    "in",
+                    "on",
+                    "at",
+                    "where"
+                  ],
+                  "correct": 1
+                },
+                {
+                  "question": "Which uses IN correctly?",
+                  "options": [
+                    "The clock is in the wall.",
+                    "The birds are in the sky.",
+                    "The book is in the desk.",
+                    "The pencil is in the table."
+                  ],
+                  "correct": 1
+                }
+              ],
+              "gameSentences": [
+                [
+                  "Where",
+                  "is",
+                  "the",
+                  "clock?"
+                ],
+                [
+                  "It's",
+                  "on",
+                  "the",
+                  "wall."
+                ],
+                [
+                  "Where",
+                  "are",
+                  "the",
+                  "clouds?"
+                ],
+                [
+                  "They're",
+                  "in",
+                  "the",
+                  "sky."
+                ],
+                [
+                  "Where",
+                  "is",
+                  "the",
+                  "book?"
+                ],
+                [
+                  "It's",
+                  "on",
+                  "the",
+                  "desk."
+                ],
+                [
+                  "The",
+                  "fish",
+                  "is",
+                  "in",
+                  "the",
+                  "river."
+                ],
+                [
+                  "Where",
+                  "is",
+                  "Leo?"
+                ],
+                [
+                  "He's",
+                  "in",
+                  "his",
+                  "room."
+                ],
+                [
+                  "The",
+                  "ball",
+                  "is",
+                  "on",
+                  "the",
+                  "floor."
+                ]
+              ]
+            }
+          ]
         },
         {
           "id": "u3",
