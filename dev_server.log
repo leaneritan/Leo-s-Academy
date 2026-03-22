@@ -1,0 +1,40 @@
+
+> leo-academy@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1742ms
+ ○ Compiling /reading ...
+ ✓ Compiled /reading in 6.6s (579 modules)
+ ✓ Compiled in 762ms (279 modules)
+ GET /reading 200 in 7377ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 5s (559 modules)
+ GET /avatar.png 404 in 5141ms
+ GET /books/wonder.jpg 404 in 5066ms
+ ✓ Compiled /reading/[id] in 393ms (565 modules)
+ GET /books/wonder.jpg 404 in 62ms
+ ○ Compiling /teacher ...
+ ✓ Compiled /teacher in 547ms (585 modules)
+ GET /teacher 200 in 657ms
+ GET /avatar.png 404 in 76ms
+ GET /reading 200 in 54ms
+ GET /avatar.png 404 in 70ms
+ GET /books/wonder.jpg 404 in 63ms
+ GET /books/wonder.jpg 404 in 27ms
+ GET /teacher 200 in 29ms
+ GET /avatar.png 404 in 40ms
+ GET /reading 200 in 32ms
+ GET /avatar.png 404 in 53ms
+ GET /books/wonder.jpg 404 in 53ms
+ GET /books/wonder.jpg 404 in 27ms
+ GET /teacher 200 in 37ms
+ GET /avatar.png 404 in 39ms
+ GET /teacher 200 in 26ms
+ GET /avatar.png 404 in 31ms
+ GET /teacher 200 in 29ms
+ GET /avatar.png 404 in 47ms
+ ✓ Compiled in 818ms (599 modules)

@@ -37,11 +37,11 @@ export default function LessonPage({ params }: { params: { id: string } }) {
       <div className="max-w-[1280px] mx-auto px-6 py-10">
         <nav className="flex gap-2 text-xs font-bold text-on-surface-variant/50 uppercase tracking-widest mb-8">
           <Link href="/dashboard" className="hover:text-primary transition-colors">Home</Link>
-          <span>></span>
+          <span>&gt;</span>
           <Link href="/subjects" className="hover:text-primary transition-colors">{subjectName}</Link>
-          <span>></span>
+          <span>&gt;</span>
           <span className="text-on-surface-variant">{lesson.unit}</span>
-          <span>></span>
+          <span>&gt;</span>
           <span className="text-on-surface-variant">{lesson.id}</span>
         </nav>
 
@@ -91,10 +91,10 @@ export default function LessonPage({ params }: { params: { id: string } }) {
 
           <aside className="lg:col-span-4 space-y-8">
             <section>
-              <h4 className="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant mb-3">TEACHER'S NOTE</h4>
+              <h4 className="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant mb-3">TEACHER&apos;S NOTE</h4>
               <Card className="p-8 border-l-4 border-primary">
                 <p className="text-on-surface-variant italic leading-relaxed text-lg">
-                  "{lesson.content.teacherNote}"
+                  &quot;{lesson.content.teacherNote}&quot;
                 </p>
               </Card>
             </section>
