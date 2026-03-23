@@ -1,24 +1,33 @@
 {
-  "current": {
-    "title": "Harry Potter and the Philosopher's Stone",
-    "author": "J.K. Rowling",
-    "assignedBy": "Dad",
-    "progress": 48,
-    "coverInitials": "HP"
-  },
-  "finished": [
+  "books": [
     {
-      "title": "The Hobbit",
-      "author": "J.R.R. Tolkien",
-      "rating": 5,
-      "review": "I loved the magic world! The dragons were so cool."
+      "id": "wonder",
+      "title": "Wonder",
+      "titleJapanese": "ワンダー",
+      "author": "R.J. Palacio",
+      "authorJapanese": "R・J・パラシオ",
+      "coverImage": "/books/wonder.jpg",
+      "language": "Japanese",
+      "status": "reading",
+      "progress": 0
     },
     {
-      "title": "Wonder",
-      "author": "R.J. Palacio",
-      "rating": 4,
-      "review": "A really nice story about being kind to everyone."
+      "id": "hobbit",
+      "title": "The Hobbit",
+      "titleJapanese": "ホビット",
+      "author": "J.R.R. Tolkien",
+      "authorJapanese": "J・R・R・トールキン",
+      "coverImage": "/books/hobbit.jpg",
+      "language": "Japanese",
+      "status": "finished",
+      "rating": 5,
+      "review": "魔法の世界が大好き！ドラゴンがかっこよかった。",
+      "dateFinished": "2024-09-01",
+      "quizCompleted": true
     }
   ],
-  "monthlyGoal": { "target": 2, "completed": 1 }
+  "monthlyGoal": {
+    "target": 2,
+    "completed": 1
+  }
 }
