@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        'pulse-slow': 'pulse-slow 3s infinite ease-in-out',
+      },
+      keyframes: {
+        'pulse-slow': {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+        }
+      },
       colors: {
         "on-primary-container": "#e9fffc",
         "tertiary-fixed-dim": "#ffb95f",

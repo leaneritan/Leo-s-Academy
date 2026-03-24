@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import ProgressTable from '@/components/teacher/ProgressTable';
@@ -10,11 +10,20 @@ import FlaggedTopics from '@/components/teacher/FlaggedTopics';
 
 export default function TeacherPage() {
   const [unlocked, setUnlocked] = useState(false);
+
+  useEffect(() => {
+    const isUnlocked = localStorage.getItem('teacher_unlocked') === 'true';
+    if (isUnlocked) {
+      setUnlocked(true);
+    }
+  }, []);
+
   const [pin, setPin] = useState('');
   const [error, setError] = useState(false);
 
   const handleUnlock = () => {
     if (pin === '1234') {
+      localStorage.setItem('teacher_unlocked', 'true');
       setUnlocked(true);
       setError(false);
     } else {

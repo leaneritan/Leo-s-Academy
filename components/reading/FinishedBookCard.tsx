@@ -2,6 +2,7 @@
 import React from 'react';
 import Card from '../ui/Card';
 import Link from 'next/link';
+import BookCover from './BookCover';
 
 interface Props {
   id: string;
@@ -11,47 +12,44 @@ interface Props {
   review: string;
   coverImage?: string;
   dateFinished?: string;
+  index?: number;
 }
 
-const FinishedBookCard: React.FC<Props> = ({ id, titleJapanese, authorJapanese, rating, review, coverImage, dateFinished }) => {
-  const initials = titleJapanese.substring(0, 1);
-
+const FinishedBookCard: React.FC<Props> = ({
+  id,
+  titleJapanese,
+  authorJapanese,
+  rating,
+  review,
+  coverImage,
+  dateFinished,
+  index = 0
+}) => {
   return (
-    <Link href={`/reading/${id}`}>
-      <Card className="p-8 flex gap-8 hover:bg-surface-container-low transition-colors cursor-pointer group">
-        <div className="w-20 h-28 bg-primary-container rounded-lg flex-shrink-0 border border-outline-variant/10 overflow-hidden relative flex items-center justify-center font-bold text-on-primary-container">
-          {coverImage && (
-            <img
-              src={coverImage}
-              alt={titleJapanese}
-              className="absolute inset-0 w-full h-full object-cover"
-              onError={(e) => {
-                (e.target as HTMLImageElement).style.display = 'none';
-              }}
-            />
-          )}
-          <span className="relative z-10">{initials}</span>
-        </div>
-        <div className="flex-1 min-w-0">
-          <h3 className="text-xl font-bold text-on-surface mb-1 truncate">{titleJapanese}</h3>
-          <p className="text-sm text-on-surface-variant mb-2">著者: {authorJapanese}</p>
+    <Link href={`/reading/${id}`} className="block group">
+      <Card className="p-6 h-full flex flex-col items-center bg-white border border-outline-variant/10 shadow-sm transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
+        <BookCover
+          titleJapanese={titleJapanese}
+          coverImage={coverImage}
+          index={index}
+          className="mb-6 w-full max-w-[160px] shadow-lg"
+        />
 
-          <div className="flex items-center gap-4 mb-4">
-            <div className="flex gap-0.5">
-              {[...Array(5)].map((_, i) => (
-                <span key={i} className={`material-symbols-outlined text-[18px] ${i < rating ? 'text-tertiary fill-1' : 'text-slate-300'}`}>
-                  star
-                </span>
-              ))}
-            </div>
-            {dateFinished && (
-              <span className="text-[10px] font-bold text-on-surface-variant/60 uppercase tracking-widest">
-                読了日: {dateFinished}
+        <div className="w-full text-center space-y-2">
+          <h3 className="text-lg font-bold text-on-surface line-clamp-1">{titleJapanese}</h3>
+          <p className="text-xs text-on-surface-variant font-medium opacity-70">著者: {authorJapanese}</p>
+
+          <div className="flex justify-center gap-0.5 py-2">
+            {[...Array(5)].map((_, i) => (
+              <span key={i} className={`material-symbols-outlined text-sm ${i < rating ? 'text-amber-500 fill-1' : 'text-slate-200'}`}>
+                star
               </span>
-            )}
+            ))}
           </div>
 
-          <p className="text-on-surface-variant italic leading-relaxed line-clamp-2">"{review}"</p>
+          <p className="text-xs text-on-surface-variant italic leading-relaxed line-clamp-1 px-2 border-t border-outline-variant/10 pt-3">
+            "{review}"
+          </p>
         </div>
       </Card>
     </Link>
