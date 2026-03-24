@@ -1,0 +1,25 @@
+
+> leo-academy@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1725ms
+ ○ Compiling /subjects ...
+ ✓ Compiled /subjects in 6.8s (571 modules)
+ GET /subjects 200 in 7669ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 8.3s (551 modules)
+ GET /avatar.png 404 in 7612ms
+ ✓ Compiled /subjects/ai in 307ms (557 modules)
+ ✓ Compiled /subjects/ai/lessons/[lessonId] in 478ms (573 modules)
+ ✓ Compiled in 928ms (587 modules)
+ ✓ Compiled in 289ms (575 modules)
+ ✓ Compiled in 270ms (285 modules)
+ ✓ Compiled /subjects in 345ms (299 modules)
+ GET /subjects 200 in 581ms
+ ✓ Compiled /_not-found in 315ms (573 modules)
+ GET /avatar.png 404 in 442ms
+[?25h

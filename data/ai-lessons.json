@@ -1,0 +1,140 @@
+[
+  {
+    "id": "ai-l1-what-is-ai",
+    "title": "What is Artificial Intelligence?",
+    "subtitle": "Understanding the basics of AI",
+    "duration": 20,
+    "xpReward": 300,
+    "lesson": {
+      "heroEmoji": "🤖",
+      "heroTitle": "What is Artificial Intelligence?",
+      "heroSubtitle": "AI is all around you. Let's find out what it really is!",
+      "explanation": "Artificial Intelligence, or AI, is when computers are programmed to do things that normally need human intelligence. Things like understanding language, recognizing faces, playing games, and making decisions. AI is not magic — it learns from data, just like you learn from experience!",
+      "keyPoints": [
+        {
+          "term": "Artificial",
+          "detail": "Made by humans, not natural. Like artificial flowers vs real flowers."
+        },
+        {
+          "term": "Intelligence",
+          "detail": "The ability to learn, understand, and solve problems."
+        },
+        {
+          "term": "AI",
+          "detail": "A computer system that can learn and make decisions like a human."
+        }
+      ],
+      "examples": [
+        { "text": "Siri and Alexa understand your voice — that is AI.", "emoji": "🎙️" },
+        { "text": "Netflix recommends shows you might like — that is AI.", "emoji": "📺" },
+        { "text": "Google Translate translates languages — that is AI.", "emoji": "🌍" },
+        { "text": "Face unlock on your phone recognizes you — that is AI.", "emoji": "📱" },
+        { "text": "Chess computers that beat humans — that is AI.", "emoji": "♟️" },
+        { "text": "Self-driving cars that steer themselves — that is AI.", "emoji": "🚗" }
+      ],
+      "reminder": {
+        "label": "Key Idea",
+        "title": "AI learns from data",
+        "body": "Just like you get better at soccer by practicing, AI gets better by processing millions of examples. The more data it sees, the smarter it gets!"
+      },
+      "teacherNote": "This lesson introduces AI as a concept Leo already experiences daily. Connect it to things he uses — his phone, YouTube recommendations, game AI opponents."
+    },
+    "levelUp": {
+      "miniLessonTitle": "AI — Changing the World",
+      "miniLessonContent": "AI is not just on your phone. It is being used in hospitals to detect diseases, in schools to personalize learning, in sports to analyze player performance, and even in art to create music and paintings. The future belongs to people who understand AI — and you are already learning it!",
+      "categories": [
+        {
+          "label": "AI in Sports",
+          "items": [
+            "AI analyzes a soccer player's movements to improve their technique.",
+            "AI predicts which team will win based on statistics."
+          ]
+        },
+        {
+          "label": "AI in Medicine",
+          "items": [
+            "AI scans X-rays and detects diseases faster than doctors.",
+            "AI helps design new medicines by testing millions of combinations."
+          ]
+        },
+        {
+          "label": "AI in Education",
+          "items": [
+            "AI personalizes lessons based on what you already know.",
+            "AI tutors can answer questions 24 hours a day."
+          ]
+        },
+        {
+          "label": "AI in Creativity",
+          "items": [
+            "AI can compose music, write stories, and create artwork.",
+            "AI tools like Claude and ChatGPT can have conversations and help you learn."
+          ]
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "What does AI stand for?",
+        "options": ["Advanced Internet", "Artificial Intelligence", "Automated Input", "Amazing Innovation"],
+        "correct": 1
+      },
+      {
+        "question": "Which of these is an example of AI?",
+        "options": ["A regular calculator", "A light switch", "Siri understanding your voice", "A paper book"],
+        "correct": 2
+      },
+      {
+        "question": "How does AI get smarter?",
+        "options": ["By sleeping", "By learning from data and examples", "By being programmed once", "By magic"],
+        "correct": 1
+      },
+      {
+        "question": "What does Artificial mean?",
+        "options": ["Natural", "Very old", "Made by humans", "Very fast"],
+        "correct": 2
+      },
+      {
+        "question": "Which is NOT an example of AI?",
+        "options": ["Netflix recommendations", "Face unlock on a phone", "A regular light bulb", "Google Translate"],
+        "correct": 2
+      },
+      {
+        "question": "AI in hospitals can help:",
+        "options": ["Cook food", "Detect diseases in X-rays", "Build walls", "Drive buses"],
+        "correct": 1
+      },
+      {
+        "question": "What is true about AI?",
+        "options": ["AI is magic", "AI never makes mistakes", "AI learns from data just like humans learn from experience", "AI can only play chess"],
+        "correct": 2
+      },
+      {
+        "question": "Which AI tool can have a conversation and help you learn?",
+        "options": ["A calculator", "Claude or ChatGPT", "A television", "A bicycle"],
+        "correct": 1
+      },
+      {
+        "question": "AI in sports can:",
+        "options": ["Score goals automatically", "Analyze player movements to improve technique", "Replace all players", "None of the above"],
+        "correct": 1
+      },
+      {
+        "question": "Why is learning about AI important for the future?",
+        "options": ["It is not important", "AI will replace all jobs tomorrow", "The future belongs to people who understand AI", "Only scientists need to know about AI"],
+        "correct": 2
+      }
+    ],
+    "game": {
+      "type": "matching",
+      "instructions": "Match the AI example to the right category!",
+      "pairs": [
+        { "item": "Siri understanding your voice", "match": "AI in daily life" },
+        { "item": "Netflix recommendations", "match": "AI in daily life" },
+        { "item": "Detecting disease in X-rays", "match": "AI in medicine" },
+        { "item": "Analyzing soccer player movements", "match": "AI in sports" },
+        { "item": "Personalizing your lessons", "match": "AI in education" }
+      ]
+    }
+  }
+]
