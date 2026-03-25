@@ -84,6 +84,17 @@
     "lessons": []
   },
   {
+    "id": "ai",
+    "name": "Artificial Intelligence",
+    "shortName": "AI",
+    "icon": "psychology",
+    "tag": "Future Skills",
+    "description": "How AI works · Machine Learning · Prompt Engineering",
+    "locked": false,
+    "completedLessons": 0,
+    "totalLessons": 10
+  },
+  {
     "id": "art",
     "name": "Art",
     "icon": "palette",

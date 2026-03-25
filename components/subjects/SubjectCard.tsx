@@ -18,15 +18,19 @@ interface SubjectCardProps {
 const SubjectCard: React.FC<SubjectCardProps> = ({
   id, name, icon, tag, description, locked = false, completedLessons, totalLessons
 }) => {
+  const isAI = id === 'ai';
+  const accentColor = isAI ? 'text-[#7c3aed]' : 'text-primary';
+  const bgColor = isAI ? 'bg-purple-50' : 'bg-teal-50';
+
   const content = (
     <Card className={`p-7 h-full ${locked ? 'bg-surface-container-high/40 opacity-70 grayscale-[0.5]' : 'hover:-translate-y-1'}`}>
       <div className="flex items-start justify-between mb-6">
-        <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${locked ? 'bg-slate-200' : 'bg-teal-50 text-primary'}`}>
+        <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${locked ? 'bg-slate-200' : `${bgColor} ${accentColor}`}`}>
           <span className="material-symbols-outlined text-2xl">
             {locked ? 'lock' : icon}
           </span>
         </div>
-        <p className={`text-[0.75rem] font-bold tracking-widest uppercase ${locked ? 'text-slate-400' : 'text-primary'}`}>
+        <p className={`text-[0.75rem] font-bold tracking-widest uppercase ${locked ? 'text-slate-400' : accentColor}`}>
           {tag}
         </p>
       </div>
@@ -39,7 +43,11 @@ const SubjectCard: React.FC<SubjectCardProps> = ({
           <span>PROGRESS</span>
           <span>{completedLessons}/{totalLessons} lessons</span>
         </div>
-        <ProgressBar value={(completedLessons / totalLessons) * 100} height="h-1.5" />
+        <ProgressBar
+          value={(completedLessons / totalLessons) * 100}
+          height="h-1.5"
+          color={isAI ? 'purple' : 'primary'}
+        />
       </div>
     </Card>
   );

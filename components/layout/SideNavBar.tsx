@@ -41,14 +41,6 @@ const SideNavBar = () => {
           );
         })}
       </nav>
-
-      <div className="p-4">
-        <div className="bg-primary-container/10 p-4 rounded-xl">
-          <button className="w-full bg-primary text-on-primary py-2 rounded-lg font-medium shadow-sm">
-            Upgrade Plan
-          </button>
-        </div>
-      </div>
     </aside>
   );
 };
