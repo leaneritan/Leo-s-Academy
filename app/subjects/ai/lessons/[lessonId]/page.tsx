@@ -57,7 +57,7 @@ function LessonTab({ lesson }: { lesson: LessonData['lesson'] }) {
           <span className="w-8 h-8 rounded-lg bg-purple-100 text-[#7c3aed] flex items-center justify-center">
             <span className="material-symbols-outlined text-xl">info</span>
           </span>
-          The Big Idea
+          「重要なアイデア」
         </h3>
         <p className="text-lg text-on-surface-variant leading-loose">
           {lesson.explanation}
@@ -65,6 +65,7 @@ function LessonTab({ lesson }: { lesson: LessonData['lesson'] }) {
       </section>
 
       {/* Key Points */}
+      <h3 className="text-2xl font-bold text-on-surface mb-6 flex items-center gap-3"><span className="w-8 h-8 rounded-lg bg-purple-100 text-[#7c3aed] flex items-center justify-center"><span className="material-symbols-outlined text-xl">school</span></span>「重要な単語」</h3>
       <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {lesson.keyPoints.map((point, i) => (
           <div key={i} className="bg-white p-8 rounded-3xl border border-outline-variant/15 shadow-sm hover:shadow-md transition-shadow">
@@ -80,7 +81,7 @@ function LessonTab({ lesson }: { lesson: LessonData['lesson'] }) {
 
       {/* 例 */}
       <section className="bg-surface-container-low rounded-[2.5rem] p-10">
-        <h3 className="text-2xl font-bold text-on-surface mb-10 text-center">AI in the Real World</h3>
+        <h3 className="text-2xl font-bold text-on-surface mb-10 text-center">「現実世界のAI」</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {lesson.examples.map((ex, i) => (
             <div key={i} className="flex items-center gap-5 bg-white p-5 rounded-2xl border border-outline-variant/10">
@@ -104,9 +105,9 @@ function LessonTab({ lesson }: { lesson: LessonData['lesson'] }) {
         </p>
       </section>
 
-      {/* Teacher Note */}
+      {/* 「先生へのメモ」 */}
       <div className="bg-surface-container-lowest border-2 border-dashed border-outline-variant/30 rounded-2xl p-6 text-center">
-        <p className="text-xs font-bold text-on-surface-variant/40 uppercase tracking-widest mb-2">Teacher Note</p>
+        <p className="text-xs font-bold text-on-surface-variant/40 uppercase tracking-widest mb-2">「先生へのメモ」</p>
         <p className="text-sm italic text-on-surface-variant/60">{lesson.teacherNote}</p>
       </div>
     </div>
@@ -175,11 +176,11 @@ function QuizTab({ quiz }: { quiz: LessonData['quiz'] }) {
     return (
       <div className="max-w-md mx-auto text-center py-12 bg-white rounded-[2.5rem] border border-outline-variant/15 shadow-xl">
         <span className="text-6xl block mb-6">🏆</span>
-        <h2 className="text-3xl font-black text-on-surface mb-2">Quiz Complete!</h2>
-        <p className="text-on-surface-variant mb-8 text-lg">You scored {score} out of {quiz.length}</p>
+        <h2 className="text-3xl font-black text-on-surface mb-2">クイズ完了！</h2>
+        <p className="text-on-surface-variant mb-8 text-lg">{score}点 / {quiz.length}点</p>
 
         <div className="bg-purple-50 text-[#7c3aed] p-8 rounded-3xl mb-8 mx-8">
-          <p className="text-xs font-black uppercase tracking-widest mb-2">XP Earned</p>
+          <p className="text-xs font-black uppercase tracking-widest mb-2">獲得XP</p>
           <p className="text-5xl font-black">+{score * 30} XP</p>
         </div>
 
@@ -192,7 +193,7 @@ function QuizTab({ quiz }: { quiz: LessonData['quiz'] }) {
           }}
           className="bg-[#7c3aed] text-white px-10 py-4 rounded-2xl font-black hover:scale-105 transition-transform shadow-lg shadow-purple-200"
         >
-          Try Again
+          もう一度挑戦
         </button>
       </div>
     );
@@ -201,9 +202,9 @@ function QuizTab({ quiz }: { quiz: LessonData['quiz'] }) {
   return (
     <div className="max-w-2xl mx-auto py-6">
       <div className="flex justify-between items-center mb-8">
-        <h2 className="text-2xl font-black text-on-surface">Knowledge Check</h2>
+        <h2 className="text-2xl font-black text-on-surface">知識チェック</h2>
         <span className="bg-purple-50 text-[#7c3aed] px-4 py-1.5 rounded-full text-xs font-black">
-          Question {current + 1}/{quiz.length}
+          問題 {current + 1}/{quiz.length}
         </span>
       </div>
 
@@ -385,10 +386,10 @@ export default function AILessonPage({ params }: { params: { lessonId: string } 
   }
 
   const tabs: { id: typeof tab; label: string; icon: string; emoji?: string }[] = [
-    { id: 'lesson', label: 'Lesson', icon: 'menu_book' },
-    { id: 'levelUp', label: 'Level Up', icon: 'rocket', emoji: '🚀' },
-    { id: 'quiz', label: 'Quiz', icon: 'quiz' },
-    { id: 'game', label: 'Game', icon: 'sports_esports' },
+    { id: 'lesson', label: 'レッスン', icon: 'menu_book' },
+    { id: 'levelUp', label: 'レベルアップ', icon: 'rocket', emoji: '🚀' },
+    { id: 'quiz', label: 'クイズ', icon: 'quiz' },
+    { id: 'game', label: 'ゲーム', icon: 'sports_esports' },
   ];
 
   return (
@@ -398,7 +399,7 @@ export default function AILessonPage({ params }: { params: { lessonId: string } 
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <div>
             <p className="text-[10px] font-black opacity-70 uppercase tracking-[0.2em] mb-1">
-              AI · Lesson 1
+              AI ・ レッスン 1
             </p>
             <h1 className="text-lg font-black tracking-tight leading-none">
               {lesson.title}

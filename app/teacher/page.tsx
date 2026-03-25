@@ -118,7 +118,7 @@ function LessonPreviewSection({ onPreview }: { onPreview: (id: string) => void }
             <Button
               variant="secondary"
               size="sm"
-              onClick={() => onPreview(lesson.id)}
+              type="button" onClick={(e) => { e.preventDefault(); onPreview(lesson.id); }}
               className="gap-2"
             >
               <span className="material-symbols-outlined text-sm">play_arrow</span>
@@ -131,6 +131,7 @@ function LessonPreviewSection({ onPreview }: { onPreview: (id: string) => void }
   );
 }
 
+
 function PresentationMode({ lessonId, onExit }: { lessonId: string, onExit: () => void }) {
   const [currentSection, setCurrentSection] = useState(0);
 
@@ -140,16 +141,31 @@ function PresentationMode({ lessonId, onExit }: { lessonId: string, onExit: () =
       for (const unit of level.units) {
         for (const grammar of unit.grammars) {
           if (grammar.id === lessonId) {
-            return {
-              title: grammar.title,
-              type: 'our-world',
-              sections: [
-                { type: 'hero', title: grammar.title, subtitle: 'Grammar Lesson' },
-                { type: 'explanation', content: grammar.explanation },
-                ...grammar.keyPoints.map(kp => ({ type: 'keypoint', ...kp })),
-                { type: 'levelup', title: grammar.levelUp.title, content: grammar.levelUp.content },
-              ]
-            };
+            const sections: any[] = [
+              { type: 'hero', title: grammar.title, subtitle: grammar.breadcrumb || 'Grammar Lesson' }
+            ];
+
+            if (grammar.chart) {
+              sections.push({ type: 'chart', title: 'Grammar Chart', chart: grammar.chart });
+            }
+
+            if (grammar.vocabulary) {
+              sections.push({ type: 'vocabulary', title: 'Vocabulary', vocabulary: grammar.vocabulary });
+            }
+
+            if (grammar.explanation) {
+               sections.push({ type: 'explanation', content: grammar.explanation });
+            }
+
+            if (grammar.examples) {
+              sections.push({ type: 'examples', title: 'Example Sentences', examples: grammar.examples });
+            }
+
+            if (grammar.levelUp) {
+               sections.push({ type: 'levelup', title: grammar.levelUp.title, content: grammar.levelUp.content });
+            }
+
+            return { title: grammar.title, sections };
           }
         }
       }
@@ -159,7 +175,6 @@ function PresentationMode({ lessonId, onExit }: { lessonId: string, onExit: () =
     if (aiLesson) {
       return {
         title: aiLesson.title,
-        type: 'ai',
         sections: [
           { type: 'hero', title: aiLesson.lesson.heroTitle, subtitle: aiLesson.lesson.heroSubtitle, emoji: aiLesson.lesson.heroEmoji },
           { type: 'explanation', content: aiLesson.lesson.explanation },
@@ -177,70 +192,122 @@ function PresentationMode({ lessonId, onExit }: { lessonId: string, onExit: () =
   const isLast = currentSection === lessonData.sections.length - 1;
 
   return (
-    <div className="fixed inset-0 z-[100] bg-white flex flex-col">
-      <div className="flex items-center justify-between px-10 py-6 border-b border-outline-variant/10">
+    <div className="fixed inset-0 z-[9999] bg-slate-950 flex flex-col text-slate-100 overflow-hidden">
+      <div className="flex items-center justify-between px-10 py-6 border-b border-white/10 bg-slate-950">
         <div className="flex items-center gap-4">
-          <div className="px-3 py-1 bg-teal-50 text-teal-700 text-[10px] font-black uppercase tracking-widest rounded-full">
+          <div className="px-3 py-1 bg-teal-500 text-white text-[10px] font-black uppercase tracking-widest rounded-full">
             Presentation Mode
           </div>
-          <h1 className="text-xl font-black text-on-surface">{lessonData.title}</h1>
+          <h1 className="text-xl font-black text-white">{lessonData.title}</h1>
         </div>
         <button
           onClick={onExit}
-          className="flex items-center gap-2 px-6 py-2 bg-surface-container-high hover:bg-surface-container-highest rounded-full text-sm font-bold transition-all"
+          className="flex items-center gap-2 px-6 py-2 bg-slate-800 hover:bg-slate-700 rounded-full text-sm font-bold transition-all"
         >
-          <span className="material-symbols-outlined text-lg">close</span>
-          終了
+          ×
+          × 終了
         </button>
       </div>
 
       <div className="flex-1 flex items-center justify-center p-20 overflow-y-auto">
-        <div className="max-w-4xl w-full animate-in fade-in slide-in-from-bottom-10 duration-500">
+        <div className="max-w-5xl w-full animate-in fade-in zoom-in-95 duration-500">
           {section.type === 'hero' && (
             <div className="text-center">
               <span className="text-9xl mb-12 block">{(section as any).emoji || '📚'}</span>
-              <h2 className="text-7xl font-black text-on-surface mb-6 tracking-tight">{(section as any).title}</h2>
-              <p className="text-3xl text-on-surface-variant font-medium">{(section as any).subtitle}</p>
+              <h2 className="text-7xl font-black text-white mb-6 tracking-tight">{(section as any).title}</h2>
+              <p className="text-3xl text-slate-400 font-medium">{(section as any).subtitle}</p>
             </div>
           )}
 
           {section.type === 'explanation' && (
-            <div className="bg-teal-50 rounded-[3rem] p-16 border-2 border-teal-100">
-              <p className="text-5xl font-bold text-teal-900 leading-[1.3] text-center">
+            <div className="bg-slate-900 rounded-[3rem] p-16 border-2 border-teal-500/20 shadow-2xl shadow-teal-500/5">
+              <p className="text-5xl font-bold text-teal-400 leading-[1.4] text-center">
                 {(section as any).content}
               </p>
             </div>
           )}
 
+          {section.type === 'chart' && (
+             <div className="space-y-10">
+               <h3 className="text-4xl font-black text-center mb-10 text-white">Grammar Chart</h3>
+               <div className="bg-slate-900 rounded-3xl overflow-hidden border border-white/10">
+                 <table className="w-full text-left">
+                   <thead className="bg-slate-800">
+                     <tr>
+                       <th className="p-8 text-2xl font-black">Question</th>
+                       <th className="p-8 text-2xl font-black">Answer</th>
+                     </tr>
+                   </thead>
+                   <tbody className="divide-y divide-white/5">
+                     {(section as any).chart.rows.map((row: any, i: number) => (
+                       <tr key={i}>
+                         <td className="p-8 text-3xl font-bold text-teal-400">{row.question}</td>
+                         <td className="p-8 text-3xl font-medium text-slate-300">{row.answer}</td>
+                       </tr>
+                     ))}
+                   </tbody>
+                 </table>
+               </div>
+             </div>
+          )}
+
+          {section.type === 'vocabulary' && (
+            <div className="space-y-10">
+              <h3 className="text-4xl font-black text-center mb-10 text-white">Vocabulary</h3>
+              <div className="grid grid-cols-2 gap-6">
+                {(section as any).vocabulary.map((v: any, i: number) => (
+                  <div key={i} className="bg-slate-900 p-8 rounded-2xl border border-white/10 flex items-center gap-6">
+                    <span className="text-6xl">{v.emoji}</span>
+                    <span className="text-4xl font-bold text-white">{v.word}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {section.type === 'examples' && (
+            <div className="space-y-8">
+               <h3 className="text-4xl font-black text-center mb-10 text-white">Example Sentences</h3>
+               <div className="space-y-6">
+                 {(section as any).examples.map((ex: any, i: number) => (
+                   <div key={i} className="bg-slate-900 p-10 rounded-2xl border border-white/10">
+                     <p className="text-4xl font-bold text-teal-400 mb-2">{ex.question}</p>
+                     <p className="text-3xl font-medium text-slate-300">{ex.answer}</p>
+                   </div>
+                 ))}
+               </div>
+            </div>
+          )}
+
           {section.type === 'keypoint' && (
             <div className="flex flex-col items-center text-center">
-              <div className="w-24 h-24 bg-teal-600 text-white rounded-3xl flex items-center justify-center mb-10 shadow-xl shadow-teal-100">
+              <div className="w-24 h-24 bg-teal-600 text-white rounded-3xl flex items-center justify-center mb-10 shadow-xl shadow-teal-500/20">
                 <span className="material-symbols-outlined text-5xl">star</span>
               </div>
-              <h3 className="text-6xl font-black text-on-surface mb-8">{(section as any).term}</h3>
-              <p className="text-4xl text-on-surface-variant leading-relaxed">{(section as any).detail}</p>
+              <h3 className="text-7xl font-black text-white mb-8">{(section as any).term}</h3>
+              <p className="text-4xl text-slate-400 leading-relaxed max-w-3xl">{(section as any).detail}</p>
             </div>
           )}
 
           {section.type === 'levelup' && (
             <div className="space-y-12">
-              <div className="flex items-center gap-6">
-                <span className="text-6xl">🚀</span>
-                <h3 className="text-6xl font-black text-on-surface tracking-tight">{(section as any).title}</h3>
+              <div className="flex items-center gap-6 justify-center">
+                <span className="text-8xl">🚀</span>
+                <h3 className="text-7xl font-black text-white tracking-tight">{(section as any).title}</h3>
               </div>
-              <p className="text-4xl text-on-surface-variant leading-relaxed">{(section as any).content}</p>
+              <p className="text-4xl text-slate-300 leading-relaxed text-center max-w-4xl mx-auto">{(section as any).content}</p>
             </div>
           )}
         </div>
       </div>
 
-      <div className="px-10 py-10 flex items-center justify-between border-t border-outline-variant/10">
+      <div className="px-10 py-10 flex items-center justify-between border-t border-white/10 bg-slate-950">
         <div className="flex gap-2">
           {lessonData.sections.map((_, i) => (
             <div
               key={i}
               className={`h-2 rounded-full transition-all duration-300 ${
-                i === currentSection ? 'w-12 bg-teal-600' : 'w-2 bg-outline-variant/20'
+                i === currentSection ? 'w-12 bg-teal-500' : 'w-2 bg-white/20'
               }`}
             />
           ))}
@@ -249,24 +316,24 @@ function PresentationMode({ lessonId, onExit }: { lessonId: string, onExit: () =
           {currentSection > 0 && (
             <button
               onClick={() => setCurrentSection(s => s - 1)}
-              className="px-10 py-5 bg-surface-container-high text-on-surface rounded-2xl font-black text-xl hover:bg-surface-container-highest transition-all"
+              className="px-10 py-5 bg-slate-800 text-white rounded-2xl font-black text-xl hover:bg-slate-700 transition-all border border-white/10"
             >
-              ← Back
+              ← 戻る
             </button>
           )}
           {!isLast ? (
             <button
               onClick={() => setCurrentSection(s => s + 1)}
-              className="px-12 py-5 bg-teal-600 text-white rounded-2xl font-black text-xl hover:scale-105 transition-all shadow-xl shadow-teal-100 flex items-center gap-3"
+              className="px-12 py-5 bg-teal-600 text-white rounded-2xl font-black text-xl hover:scale-105 transition-all shadow-xl shadow-teal-500/20 flex items-center gap-3"
             >
-              Next →
+              次へ →
             </button>
           ) : (
             <button
               onClick={onExit}
-              className="px-12 py-5 bg-teal-600 text-white rounded-2xl font-black text-xl hover:scale-105 transition-all shadow-xl shadow-teal-100 flex items-center gap-3"
+              className="px-12 py-5 bg-teal-600 text-white rounded-2xl font-black text-xl hover:scale-105 transition-all shadow-xl shadow-teal-500/20 flex items-center gap-3"
             >
-              Finish! 🏁
+              終了！ 🏁
             </button>
           )}
         </div>

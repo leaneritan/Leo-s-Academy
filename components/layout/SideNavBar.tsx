@@ -15,13 +15,13 @@ const SideNavBar = () => {
   const pathname = usePathname();
 
   return (
-    <aside className="fixed left-0 top-0 bottom-0 w-64 bg-slate-50 hidden md:flex flex-col border-r border-slate-200">
-      <div className="p-6">
+    <aside className="fixed left-0 top-0 bottom-0 w-64 bg-slate-50 hidden md:flex flex-col border-r border-slate-200 z-40">
+      <div className="h-16 px-6 flex flex-col justify-center border-b border-slate-100">
         <h1 className="text-xl font-bold tracking-tighter text-teal-800">Leo's Academy</h1>
         <p className="text-sm text-on-surface-variant">Level {studentData.level} {studentData.title}</p>
       </div>
 
-      <nav className="flex-1 px-4 space-y-2 mt-4">
+      <nav className="flex-1 px-4 space-y-2 pt-8">
         {navItems.map((item) => {
           const isActive = pathname === item.href || (item.href !== '/dashboard' && pathname?.startsWith(item.href));
           return (
