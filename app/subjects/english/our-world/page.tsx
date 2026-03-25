@@ -51,23 +51,25 @@ export default function OurWorldPage() {
 
   const filteredGrammars = useMemo(() => {
     if (!search.trim()) return [];
-    const q = search.toLowerCase();
-    return allGrammars.filter(({ grammar, unit, level }) =>
-      grammar.title.toLowerCase().includes(q) ||
-      unit.title.toLowerCase().includes(q) ||
-      level.title.toLowerCase().includes(q)
+    return allGrammars.filter(g =>
+      g.grammar.title.toLowerCase().includes(search.toLowerCase()) ||
+      g.unit.title.toLowerCase().includes(search.toLowerCase()) ||
+      g.level.title.toLowerCase().includes(search.toLowerCase())
     );
-  }, [search, allGrammars]);
+  }, [allGrammars, search]);
 
-  const activeLevel = selectedLevel ? levels.find((l) => l.id === selectedLevel) : null;
-  const activeUnit = activeLevel && selectedUnit
-    ? activeLevel.units.find((u) => u.id === selectedUnit)
-    : null;
+  const activeLevel = levels.find(l => l.id === selectedLevel);
+  const activeUnit = activeLevel?.units.find(u => u.id === selectedUnit);
 
   const handleLevelClick = (levelId: string, comingSoon: boolean) => {
     if (comingSoon) return;
-    setSelectedLevel(selectedLevel === levelId ? null : levelId);
-    setSelectedUnit(null);
+    if (selectedLevel === levelId) {
+      setSelectedLevel(null);
+      setSelectedUnit(null);
+    } else {
+      setSelectedLevel(levelId);
+      setSelectedUnit(null);
+    }
   };
 
   const handleUnitClick = (unitId: string, comingSoon: boolean) => {
@@ -77,35 +79,22 @@ export default function OurWorldPage() {
 
   return (
     <div className="pb-20">
-      <nav className="flex gap-2 text-xs font-bold text-on-surface-variant/50 uppercase tracking-widest mb-8">
-        <Link href="/subjects" className="hover:text-primary transition-colors">Subjects</Link>
-        <span>›</span>
-        <Link href="/subjects/english" className="hover:text-primary transition-colors">English</Link>
-        <span>›</span>
-        <span className="text-on-surface-variant">Our World</span>
-      </nav>
-
-      <header className="mb-8">
-        <div className="flex items-center gap-3 mb-3">
-          <div className="w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center">
-            <span className="material-symbols-outlined text-primary text-xl">public</span>
-          </div>
-          <h1 className="text-[1.75rem] font-bold text-on-surface">Our World</h1>
-        </div>
-        <p className="text-on-surface-variant">Select a level to explore units and grammar points.</p>
+      <header className="mb-10">
+        <h1 className="text-4xl font-bold text-on-surface mb-2 tracking-tighter">Our World 🌍</h1>
+        <p className="text-on-surface-variant font-medium">Grammar and language for English learners.</p>
       </header>
 
-      {/* Search bar */}
-      <div className="relative mb-10">
-        <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant/50 text-xl pointer-events-none">
-          search
-        </span>
+      {/* Search Bar */}
+      <div className="relative mb-10 group">
+        <div className="absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant/40 group-focus-within:text-primary transition-colors">
+          <span className="material-symbols-outlined text-xl">search</span>
+        </div>
         <input
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Search grammar points..."
-          className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-surface-container-lowest shadow-[0_4px_16px_-4px_rgba(24,28,29,0.08)] text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:ring-2 focus:ring-primary/30 text-sm font-medium transition-all"
+          className="w-full pl-12 pr-4 py-4 rounded-2xl bg-surface-container-lowest border-none shadow-[0_8px_24px_-4px_rgba(24,28,29,0.08)] text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:ring-2 focus:ring-primary/30 text-sm font-medium transition-all"
         />
         {search && (
           <button
@@ -300,6 +289,40 @@ export default function OurWorldPage() {
                   </div>
                 </div>
               )}
+            </div>
+          )}
+
+          {/* Grammar points list below level cards */}
+          {!selectedLevel && (
+            <div className="mt-12">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="h-px flex-1 bg-outline-variant/15" />
+                <p className="text-[0.7rem] font-bold tracking-widest uppercase text-on-surface-variant">
+                  Grammar Points List
+                </p>
+                <div className="h-px flex-1 bg-outline-variant/15" />
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {allGrammars.map(({ grammar, unit, level }) => (
+                  <Link
+                    key={grammar.id}
+                    href={`/subjects/english/our-world/${grammar.id}`}
+                    className="block"
+                  >
+                    <div className="rounded-xl p-4 bg-surface-container-lowest shadow-[0_4px_12px_-2px_rgba(24,28,29,0.08)] hover:-translate-y-0.5 hover:shadow-md transition-all flex items-center gap-3 border border-outline-variant/5">
+                      <div className="w-8 h-8 rounded-lg bg-teal-50 flex items-center justify-center">
+                        <span className="material-symbols-outlined text-primary text-lg">description</span>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-[0.6rem] font-bold text-primary/60 uppercase truncate">
+                          {level.title} · {unit.title}
+                        </p>
+                        <p className="text-sm font-semibold text-on-surface truncate">{grammar.title}</p>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
           )}
         </>

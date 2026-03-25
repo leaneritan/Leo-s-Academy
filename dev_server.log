@@ -6,20 +6,42 @@
   - Local:        http://localhost:3000
 
  ✓ Starting...
- ✓ Ready in 1725ms
- ○ Compiling /subjects ...
- ✓ Compiled /subjects in 6.8s (571 modules)
- GET /subjects 200 in 7669ms
- ○ Compiling /_not-found ...
- ✓ Compiled /_not-found in 8.3s (551 modules)
- GET /avatar.png 404 in 7612ms
- ✓ Compiled /subjects/ai in 307ms (557 modules)
- ✓ Compiled /subjects/ai/lessons/[lessonId] in 478ms (573 modules)
- ✓ Compiled in 928ms (587 modules)
- ✓ Compiled in 289ms (575 modules)
- ✓ Compiled in 270ms (285 modules)
- ✓ Compiled /subjects in 345ms (299 modules)
- GET /subjects 200 in 581ms
- ✓ Compiled /_not-found in 315ms (573 modules)
- GET /avatar.png 404 in 442ms
-[?25h
+ ✓ Ready in 1868ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 7.7s (587 modules)
+ ✓ Compiled in 988ms (280 modules)
+ GET /dashboard 200 in 8780ms
+ ○ Compiling /api/reading ...
+ ✓ Compiled /subjects/ai/lessons/[lessonId] in 5.1s (327 modules)
+ ✓ Compiled in 1171ms (274 modules)
+ GET /api/reading 200 in 6740ms
+ GET /api/reading 200 in 36ms
+ ✓ Compiled /_not-found in 464ms (612 modules)
+ GET /books/wonder.jpg 404 in 730ms
+ GET /subjects/ai/lessons/ai-l1-what-is-ai 200 in 7254ms
+ ○ Compiling /subjects/english/our-world ...
+ ✓ Compiled /subjects/english/our-world in 509ms (620 modules)
+ GET /subjects/english/our-world 200 in 612ms
+ ○ Compiling /teacher ...
+ ✓ Compiled /teacher in 821ms (638 modules)
+ GET /teacher 200 in 926ms
+ ✓ Compiled in 946ms (652 modules)
+ GET /dashboard 200 in 88ms
+ GET /api/reading 200 in 32ms
+ GET /api/reading 200 in 51ms
+ GET /books/wonder.jpg 404 in 38ms
+ GET /subjects/ai/lessons/ai-l1-what-is-ai 200 in 81ms
+ GET /subjects/english/our-world 200 in 82ms
+ GET /teacher 200 in 56ms
+ ✓ Compiled in 1513ms (609 modules)
+ GET /dashboard 200 in 219ms
+ ✓ Compiled /api/reading in 219ms (339 modules)
+ GET /api/reading 200 in 314ms
+ GET /api/reading 200 in 26ms
+ ✓ Compiled /_not-found in 208ms (627 modules)
+ GET /books/wonder.jpg 404 in 350ms
+ ✓ Compiled /subjects/ai/lessons/[lessonId] in 224ms (347 modules)
+ GET /subjects/ai/lessons/ai-l1-what-is-ai 200 in 459ms
+ ✓ Compiled /subjects/english/our-world in 418ms (351 modules)
+ GET /subjects/english/our-world 200 in 567ms
+ GET /teacher 200 in 68ms
