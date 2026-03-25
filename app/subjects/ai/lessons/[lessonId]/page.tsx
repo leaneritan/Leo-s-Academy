@@ -78,7 +78,7 @@ function LessonTab({ lesson }: { lesson: LessonData['lesson'] }) {
         ))}
       </section>
 
-      {/* Examples */}
+      {/* 例 */}
       <section className="bg-surface-container-low rounded-[2.5rem] p-10">
         <h3 className="text-2xl font-bold text-on-surface mb-10 text-center">AI in the Real World</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -252,7 +252,7 @@ function QuizTab({ quiz }: { quiz: LessonData['quiz'] }) {
           onClick={handleNext}
           className="w-full bg-[#7c3aed] text-white py-4 rounded-2xl font-black hover:-translate-y-1 transition-all shadow-lg shadow-purple-200"
         >
-          {current + 1 < quiz.length ? 'Next Question' : 'Finish Quiz'}
+          {current + 1 < quiz.length ? '次の問題' : 'クイズ終了'}
         </button>
       )}
     </div>
@@ -299,8 +299,8 @@ function GameTab({ game }: { game: LessonData['game'] }) {
     return (
       <div className="max-w-md mx-auto text-center py-12">
         <span className="text-6xl block mb-6">🎮</span>
-        <h2 className="text-3xl font-black text-on-surface mb-2">Game Complete!</h2>
-        <p className="text-on-surface-variant mb-10">You matched everything correctly!</p>
+        <h2 className="text-3xl font-black text-on-surface mb-2">ゲームクリア！</h2>
+        <p className="text-on-surface-variant mb-10">すべて正しく合わせられました！</p>
         <button
           onClick={() => {
             setMatches({});
@@ -309,7 +309,7 @@ function GameTab({ game }: { game: LessonData['game'] }) {
           }}
           className="bg-[#7c3aed] text-white px-10 py-4 rounded-2xl font-black hover:scale-105 transition-transform"
         >
-          Play Again
+          もう一度遊ぶ
         </button>
       </div>
     );
@@ -317,13 +317,13 @@ function GameTab({ game }: { game: LessonData['game'] }) {
 
   return (
     <div className="max-w-4xl mx-auto py-6 text-center">
-      <h2 className="text-2xl font-black text-on-surface mb-2">AI Match-Up</h2>
+      <h2 className="text-2xl font-black text-on-surface mb-2">AIマッチング</h2>
       <p className="text-on-surface-variant mb-12">{game.instructions}</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
         {/* Items to match */}
         <div className="space-y-4">
-          <p className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/50 mb-4 px-2">Examples</p>
+          <p className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/50 mb-4 px-2">例</p>
           {items.map((item, i) => (
             <button
               key={i}
@@ -343,9 +343,9 @@ function GameTab({ game }: { game: LessonData['game'] }) {
           ))}
         </div>
 
-        {/* Categories */}
+        {/* カテゴリー */}
         <div className="space-y-4">
-          <p className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/50 mb-4 px-2">Categories</p>
+          <p className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/50 mb-4 px-2">カテゴリー</p>
           {categories.map((cat, i) => (
             <button
               key={i}
@@ -409,7 +409,7 @@ export default function AILessonPage({ params }: { params: { lessonId: string } 
             className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full text-xs font-black uppercase tracking-widest transition-all"
           >
             <span className="material-symbols-outlined text-sm">arrow_back</span>
-            Exit
+            終了
           </Link>
         </div>
       </div>
@@ -417,7 +417,7 @@ export default function AILessonPage({ params }: { params: { lessonId: string } 
       <div className="max-w-4xl mx-auto px-6 py-10">
         {/* Navigation Breadcrumb */}
         <nav className="flex gap-2 text-[10px] font-black text-on-surface-variant/40 uppercase tracking-widest mb-10">
-          <Link href="/subjects" className="hover:text-[#7c3aed] transition-colors">Subjects</Link>
+          <Link href="/subjects" className="hover:text-[#7c3aed] transition-colors">科目</Link>
           <span>›</span>
           <Link href="/subjects/ai" className="hover:text-[#7c3aed] transition-colors">AI</Link>
           <span>›</span>
