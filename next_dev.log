@@ -1,0 +1,16 @@
+
+> leo-academy@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1720ms
+ ○ Compiling /subjects/english/our-world ...
+ ✓ Compiled /subjects/english/our-world in 6.2s (563 modules)
+ ✓ Compiled in 726ms (271 modules)
+ GET /subjects/english/our-world 200 in 6999ms
+ ○ Compiling /subjects/english/our-world/vocabulary ...
+ ✓ Compiled /subjects/english/our-world/vocabulary in 1919ms (548 modules)
+ GET /subjects/english/our-world 200 in 147ms
