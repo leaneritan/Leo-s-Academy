@@ -1,0 +1,746 @@
+{
+  "levels": [
+    {
+      "id": 1,
+      "label": "Level 1",
+      "units": [
+        {
+          "id": 1,
+          "label": "Unit 1 — Classroom & School Supplies",
+          "words": [
+            { "word": "a classroom", "emoji": "🏫", "sentence": "I like my classroom." },
+            { "word": "a board", "emoji": "📋", "sentence": "My school has a green board." },
+            { "word": "a pencil", "emoji": "✏️", "sentence": "I write with a pencil." },
+            { "word": "a pen", "emoji": "🖊️", "sentence": "It's a pen." },
+            { "word": "a crayon", "emoji": "🖍️", "sentence": "It's a crayon." },
+            { "word": "paper", "emoji": "📄", "sentence": "I write on paper." },
+            { "word": "a map", "emoji": "🗺️", "sentence": "The map is on the wall." },
+            { "word": "a clock", "emoji": "🕐", "sentence": "The clock is on the wall." },
+            { "word": "a computer", "emoji": "💻", "sentence": "I study with my computer." },
+            { "word": "a table", "emoji": "🪑", "sentence": "I eat dinner on the table." },
+            { "word": "a chair", "emoji": "🪑", "sentence": "I sit on a chair." },
+            { "word": "a desk", "emoji": "🗂️", "sentence": "The desk is in the classroom." },
+            { "word": "a book", "emoji": "📚", "sentence": "I'm reading a book." },
+            { "word": "a picture", "emoji": "🖼️", "sentence": "I have a picture of Ronaldo." }
+          ]
+        },
+        {
+          "id": 2,
+          "label": "Unit 2 — Nature",
+          "words": [
+            { "word": "the sky", "emoji": "🌤️", "sentence": "The sky is up high." },
+            { "word": "a tree", "emoji": "🌳", "sentence": "A tree has branches and leaves." },
+            { "word": "grass", "emoji": "🌿", "sentence": "Grass is green and grows on the ground." },
+            { "word": "a river", "emoji": "🏞️", "sentence": "A river flows with water." },
+            { "word": "a mountain", "emoji": "⛰️", "sentence": "A mountain is big and tall." },
+            { "word": "a rock", "emoji": "🪨", "sentence": "The rock is hard and solid." },
+            { "word": "the sun", "emoji": "☀️", "sentence": "The sun is bright and gives us light." },
+            { "word": "a bird", "emoji": "🐦", "sentence": "A bird can fly in the sky." },
+            { "word": "the ocean", "emoji": "🌊", "sentence": "The ocean is big and has waves." },
+            { "word": "a butterfly", "emoji": "🦋", "sentence": "A butterfly has colorful wings and can fly." },
+            { "word": "a star", "emoji": "⭐", "sentence": "A star shines in the night sky." },
+            { "word": "a flower", "emoji": "🌸", "sentence": "A flower is colorful and smells nice." },
+            { "word": "a cloud", "emoji": "☁️", "sentence": "A cloud is in the sky." },
+            { "word": "a bush", "emoji": "🌿", "sentence": "A bush has leaves and flowers." },
+            { "word": "the moon", "emoji": "🌙", "sentence": "The moon is in the sky." }
+          ]
+        },
+        {
+          "id": 3,
+          "label": "Unit 3 — Family",
+          "words": [
+            { "word": "baby", "emoji": "👶", "sentence": "My aunt has a cute baby." },
+            { "word": "brother", "emoji": "👦", "sentence": "I play with my brother in the park." },
+            { "word": "father", "emoji": "👨", "sentence": "My father helps me with my homework." },
+            { "word": "grandfather", "emoji": "👴", "sentence": "I visit my grandfather on Sundays." },
+            { "word": "grandmother", "emoji": "👵", "sentence": "My grandmother bakes delicious cookies." },
+            { "word": "mother", "emoji": "👩", "sentence": "My mother cooks yummy dinners." },
+            { "word": "parents", "emoji": "👨‍👩‍👦", "sentence": "My parents take me to the zoo." },
+            { "word": "a photo", "emoji": "📷", "sentence": "I have a photo of my family on the wall." },
+            { "word": "sister", "emoji": "👧", "sentence": "My sister and I share a room." },
+            { "word": "family", "emoji": "👨‍👩‍👦‍👧", "sentence": "My family loves to go on picnics together." },
+            { "word": "big brother", "emoji": "🧑", "sentence": "My big brother helps me with my homework." },
+            { "word": "grandma", "emoji": "👵", "sentence": "My grandma has an old photo album." },
+            { "word": "little sister", "emoji": "👧", "sentence": "My little sister is short." },
+            { "word": "small dog", "emoji": "🐕", "sentence": "We have a small dog as a pet." },
+            { "word": "dad", "emoji": "👨", "sentence": "My dad is tall." },
+            { "word": "young cousin", "emoji": "🧒", "sentence": "My young cousin loves playing with toys." }
+          ]
+        },
+        {
+          "id": 4,
+          "label": "Unit 4 — Home",
+          "words": [
+            { "word": "a living room", "emoji": "🛋️", "sentence": "There is a comfortable sofa in the living room." },
+            { "word": "a lamp", "emoji": "💡", "sentence": "There is a lamp on the table." },
+            { "word": "a dining room", "emoji": "🍽️", "sentence": "There is a big table in the dining room." },
+            { "word": "a bedroom", "emoji": "🛏️", "sentence": "There is a cozy bed in the bedroom." },
+            { "word": "a TV", "emoji": "📺", "sentence": "There is a TV in the living room." },
+            { "word": "a kitchen", "emoji": "🍳", "sentence": "There is delicious food in the kitchen." },
+            { "word": "a sofa", "emoji": "🛋️", "sentence": "There is a soft sofa in the living room." },
+            { "word": "a bathroom", "emoji": "🚿", "sentence": "There is a bathtub in the bathroom." },
+            { "word": "a mirror", "emoji": "🪞", "sentence": "There is a mirror on the wall." },
+            { "word": "a bed", "emoji": "🛏️", "sentence": "There is a fluffy pillow on the bed." },
+            { "word": "sleeping", "emoji": "😴", "sentence": "He's sleeping in his cozy bed." },
+            { "word": "cleaning", "emoji": "🧹", "sentence": "She's cleaning her room with a broom." },
+            { "word": "cooking", "emoji": "🍳", "sentence": "She's cooking a delicious dinner in the kitchen." },
+            { "word": "watching TV", "emoji": "📺", "sentence": "He's watching TV on the sofa." },
+            { "word": "eating", "emoji": "🍪", "sentence": "They're eating yummy cookies." },
+            { "word": "brushing teeth", "emoji": "🪥", "sentence": "She's brushing her teeth before bedtime." },
+            { "word": "taking a bath", "emoji": "🛁", "sentence": "He's taking a warm bath to get clean." }
+          ]
+        },
+        {
+          "id": 5,
+          "label": "Unit 5 — Clothes",
+          "words": [
+            { "word": "a hat", "emoji": "🎩", "sentence": "I am wearing a hat." },
+            { "word": "gloves", "emoji": "🧤", "sentence": "I am wearing gloves." },
+            { "word": "a skirt", "emoji": "👗", "sentence": "I am wearing a skirt." },
+            { "word": "a dress", "emoji": "👗", "sentence": "I am wearing a dress." },
+            { "word": "pants", "emoji": "👖", "sentence": "I am wearing pants." },
+            { "word": "a shirt", "emoji": "👕", "sentence": "I am wearing a shirt." },
+            { "word": "a jacket", "emoji": "🧥", "sentence": "I am wearing a jacket." },
+            { "word": "a t-shirt", "emoji": "👕", "sentence": "I am wearing a t-shirt." },
+            { "word": "socks", "emoji": "🧦", "sentence": "I am wearing socks." },
+            { "word": "shoes", "emoji": "👟", "sentence": "I am wearing shoes." },
+            { "word": "pink", "emoji": "🌸", "sentence": "That's a pink shirt." },
+            { "word": "purple", "emoji": "💜", "sentence": "That's a purple flower." },
+            { "word": "brown", "emoji": "🟫", "sentence": "Those are brown books." },
+            { "word": "a shelf", "emoji": "📚", "sentence": "Those are my shelves." },
+            { "word": "a closet", "emoji": "🚪", "sentence": "Those are my closets." }
+          ]
+        },
+        {
+          "id": 6,
+          "label": "Unit 6 — Toys",
+          "words": [
+            { "word": "a train", "emoji": "🚂", "sentence": "Do you want a train? No, I don't." },
+            { "word": "a drum", "emoji": "🥁", "sentence": "Do you want a drum? Yes, I do." },
+            { "word": "a ball", "emoji": "⚽", "sentence": "Does he want a ball? Yes, he does." },
+            { "word": "a truck", "emoji": "🚛", "sentence": "Does he want a truck? No, he doesn't." },
+            { "word": "a car", "emoji": "🚗", "sentence": "Do you want a car? No, I don't." },
+            { "word": "a top", "emoji": "🪀", "sentence": "Do you want a top? Yes, I do." },
+            { "word": "a puppet", "emoji": "🪆", "sentence": "Do you want a puppet? No, I don't." },
+            { "word": "a game", "emoji": "🎮", "sentence": "Does she want a game? No, she doesn't." },
+            { "word": "a kite", "emoji": "🪁", "sentence": "Does she want a kite? Yes, she does." },
+            { "word": "a bike", "emoji": "🚲", "sentence": "Do you want a bike? Yes, I do." },
+            { "word": "a robot", "emoji": "🤖", "sentence": "Is this your robot? Yes, this is my robot." },
+            { "word": "a puzzle", "emoji": "🧩", "sentence": "Is this your puzzle? Yes, this is my puzzle." },
+            { "word": "a teddy bear", "emoji": "🧸", "sentence": "Are these your teddy bears? Yes, they are." },
+            { "word": "a board game", "emoji": "🎲", "sentence": "Are these your board games? No, they aren't." },
+            { "word": "a doll", "emoji": "🪆", "sentence": "Are these your dolls? Yes, they are." }
+          ]
+        },
+        {
+          "id": 7,
+          "label": "Unit 7 — Body",
+          "words": [
+            { "word": "a foot", "emoji": "🦶", "sentence": "My foot is small." },
+            { "word": "a leg", "emoji": "🦵", "sentence": "Your leg is big." },
+            { "word": "hair", "emoji": "💇", "sentence": "My hair is black." },
+            { "word": "an arm", "emoji": "💪", "sentence": "His arm is strong." },
+            { "word": "a head", "emoji": "🗣️", "sentence": "Her head is round." },
+            { "word": "a hand", "emoji": "✋", "sentence": "His hand is large." },
+            { "word": "an eye", "emoji": "👁️", "sentence": "My eye is blue." },
+            { "word": "an ear", "emoji": "👂", "sentence": "Your ear is small." },
+            { "word": "a nose", "emoji": "👃", "sentence": "My nose is straight." },
+            { "word": "a mouth", "emoji": "👄", "sentence": "Your mouth is wide." },
+            { "word": "a neck", "emoji": "—", "sentence": "My neck is long." },
+            { "word": "feet", "emoji": "🦶", "sentence": "Our feet are tired." },
+            { "word": "jump", "emoji": "🏃", "sentence": "Can you jump high? Yes, I can." },
+            { "word": "run", "emoji": "🏃", "sentence": "Can you run fast? Yes, I can." },
+            { "word": "walk", "emoji": "🚶", "sentence": "Can you walk quietly? No, I can't." }
+          ]
+        },
+        {
+          "id": 8,
+          "label": "Unit 8 — Food",
+          "words": [
+            { "word": "a banana", "emoji": "🍌", "sentence": "Do you like bananas? Yes, I do." },
+            { "word": "cheese pizza", "emoji": "🍕", "sentence": "Does she like cheese pizza? No, she doesn't." },
+            { "word": "a salad", "emoji": "🥗", "sentence": "Do you like salads? Yes, I do." },
+            { "word": "an apple", "emoji": "🍎", "sentence": "Does she like apples? No, she doesn't." },
+            { "word": "an orange", "emoji": "🍊", "sentence": "Do you like oranges? Yes, I do." },
+            { "word": "rice", "emoji": "🍚", "sentence": "Does she like rice? Yes, she does." },
+            { "word": "a sandwich", "emoji": "🥪", "sentence": "Do you like sandwiches? No, I don't." },
+            { "word": "a cookie", "emoji": "🍪", "sentence": "Does she like cookies? Yes, she does." },
+            { "word": "soup", "emoji": "🍜", "sentence": "Do you like soup? No, I don't." },
+            { "word": "chicken", "emoji": "🍗", "sentence": "Do you like chicken? Yes, I do." },
+            { "word": "an egg", "emoji": "🥚", "sentence": "Does he like eggs? Yes, he does." },
+            { "word": "fish", "emoji": "🐟", "sentence": "Do you like fish? Yes, I do." },
+            { "word": "orange juice", "emoji": "🍊", "sentence": "She drinks orange juice in the morning." },
+            { "word": "water", "emoji": "💧", "sentence": "Water is good for you." },
+            { "word": "lemonade", "emoji": "🍋", "sentence": "Lemonade is refreshing on a hot day." },
+            { "word": "milk", "emoji": "🥛", "sentence": "Kids drink milk for strong bones." }
+          ]
+        },
+        {
+          "id": 9,
+          "label": "Unit 9 — Animals",
+          "words": [
+            { "word": "a cat", "emoji": "🐱", "sentence": "Are the cats sleeping? No, they aren't." },
+            { "word": "a chicken", "emoji": "🐔", "sentence": "Are the chickens running? Yes, they are." },
+            { "word": "a cow", "emoji": "🐄", "sentence": "What are the cows doing? They are eating." },
+            { "word": "a dog", "emoji": "🐶", "sentence": "Are the dogs running? Yes, they are." },
+            { "word": "a donkey", "emoji": "🫏", "sentence": "Are the donkeys running? No, they aren't." },
+            { "word": "a duck", "emoji": "🦆", "sentence": "What are the ducks doing? They are swimming." },
+            { "word": "a frog", "emoji": "🐸", "sentence": "What are the frogs doing? They are jumping." },
+            { "word": "a goat", "emoji": "🐐", "sentence": "What are the goats doing? They are climbing." },
+            { "word": "a horse", "emoji": "🐴", "sentence": "Are the horses jumping? No, they aren't." },
+            { "word": "a rabbit", "emoji": "🐰", "sentence": "Are the rabbits running? Yes, they are." },
+            { "word": "a sheep", "emoji": "🐑", "sentence": "Are the sheep climbing? No, they aren't." },
+            { "word": "a turtle", "emoji": "🐢", "sentence": "Are the turtles crawling? No, they aren't." },
+            { "word": "crawl", "emoji": "🐢", "sentence": "Does Keiji want to crawl? No, he doesn't." },
+            { "word": "climb", "emoji": "🧗", "sentence": "Do you want to climb a mountain? Yes, I do." },
+            { "word": "swim", "emoji": "🏊", "sentence": "Does your friend want to swim in the ocean? Yes, he does." },
+            { "word": "fly", "emoji": "🐦", "sentence": "What do the birds want to do? They want to fly." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Level 2",
+      "units": [
+        {
+          "id": 1,
+          "label": "Unit 1 — School Activities",
+          "words": [
+            { "word": "reading", "emoji": "📖", "sentence": "I enjoy reading books and stories." },
+            { "word": "counting", "emoji": "🔢", "sentence": "Let's practice counting from one to ten." },
+            { "word": "coloring", "emoji": "🖍️", "sentence": "I like coloring pictures with crayons." },
+            { "word": "listen", "emoji": "👂", "sentence": "We need to be quiet and listen to the teacher." },
+            { "word": "cutting", "emoji": "✂️", "sentence": "I like cutting colored paper." },
+            { "word": "drawing", "emoji": "🎨", "sentence": "I love drawing and creating colorful pictures." },
+            { "word": "talking", "emoji": "💬", "sentence": "I like talking with my friends about soccer." },
+            { "word": "writing", "emoji": "✏️", "sentence": "Let's practice writing the alphabet and words." },
+            { "word": "gluing", "emoji": "🖊️", "sentence": "Me and my father, we're gluing paper." },
+            { "word": "erasing", "emoji": "🗑️", "sentence": "We are erasing when we make a mistake." },
+            { "word": "glue", "emoji": "🖊️", "sentence": "I am using glue for gluing." },
+            { "word": "a paint brush", "emoji": "🖌️", "sentence": "We're using a paint brush." },
+            { "word": "a notebook", "emoji": "📓", "sentence": "I am writing in a notebook." },
+            { "word": "scissors", "emoji": "✂️", "sentence": "We're using scissors to cut." },
+            { "word": "a marker", "emoji": "🖊️", "sentence": "I'm using a marker to color." }
+          ]
+        },
+        {
+          "id": 2,
+          "label": "Unit 2 — Weather & Clothes",
+          "words": [
+            { "word": "a raincoat", "emoji": "🧥", "sentence": "It's rainy. I need a raincoat." },
+            { "word": "boots", "emoji": "👢", "sentence": "I don't have boots." },
+            { "word": "a bathing suit", "emoji": "🩱", "sentence": "I don't need a bathing suit today." },
+            { "word": "a sweater", "emoji": "🧶", "sentence": "I have an ugly sweater." },
+            { "word": "cloudy", "emoji": "☁️", "sentence": "I like cloudy days." },
+            { "word": "sunny", "emoji": "☀️", "sentence": "I like sunny weather." },
+            { "word": "windy", "emoji": "💨", "sentence": "I don't like windy weather." },
+            { "word": "snowy", "emoji": "❄️", "sentence": "I like snowy days." },
+            { "word": "shorts", "emoji": "🩳", "sentence": "He's wearing shorts." },
+            { "word": "sneakers", "emoji": "👟", "sentence": "He's wearing sneakers." },
+            { "word": "an umbrella", "emoji": "☂️", "sentence": "It's an umbrella." },
+            { "word": "a coat", "emoji": "🧥", "sentence": "She's wearing a coat." },
+            { "word": "jeans", "emoji": "👖", "sentence": "She's wearing jeans." }
+          ]
+        },
+        {
+          "id": 3,
+          "label": "Unit 3 — Sports & Games",
+          "words": [
+            { "word": "jump rope", "emoji": "🪢", "sentence": "They're jumping rope." },
+            { "word": "basketball", "emoji": "🏀", "sentence": "They're playing basketball." },
+            { "word": "a game", "emoji": "🎮", "sentence": "He's playing a game." },
+            { "word": "ride a bike", "emoji": "🚲", "sentence": "He's riding a bike." },
+            { "word": "rollerblade", "emoji": "⛸️", "sentence": "He's rollerblading." },
+            { "word": "soccer", "emoji": "⚽", "sentence": "They're playing soccer." },
+            { "word": "baseball", "emoji": "⚾", "sentence": "They're playing baseball." },
+            { "word": "skateboard", "emoji": "🛹", "sentence": "He's skateboarding." },
+            { "word": "hide and seek", "emoji": "🙈", "sentence": "They're playing hide and seek." },
+            { "word": "kite", "emoji": "🪁", "sentence": "He's flying a kite." },
+            { "word": "bounce a ball", "emoji": "⚽", "sentence": "I like to bounce a ball." },
+            { "word": "throw a ball", "emoji": "⚽", "sentence": "I like to throw a ball." },
+            { "word": "catch a ball", "emoji": "⚽", "sentence": "I like to catch a ball." },
+            { "word": "watch a game", "emoji": "📺", "sentence": "I like to watch a game." },
+            { "word": "play tag", "emoji": "🏃", "sentence": "They like to play tag." }
+          ]
+        },
+        {
+          "id": 4,
+          "label": "Unit 4 — Furniture & Rooms",
+          "words": [
+            { "word": "a bookcase", "emoji": "📚", "sentence": "It's a bookcase." },
+            { "word": "a fireplace", "emoji": "🔥", "sentence": "It's a fireplace." },
+            { "word": "an armchair", "emoji": "🪑", "sentence": "It's an armchair." },
+            { "word": "a shower", "emoji": "🚿", "sentence": "It's a shower." },
+            { "word": "a tub", "emoji": "🛁", "sentence": "It's a tub." },
+            { "word": "a microwave", "emoji": "📡", "sentence": "It's a microwave." },
+            { "word": "stairs", "emoji": "🪜", "sentence": "They're stairs." },
+            { "word": "a stove", "emoji": "🍳", "sentence": "It's a stove." },
+            { "word": "shelves", "emoji": "📚", "sentence": "They're shelves." },
+            { "word": "a rug", "emoji": "🟫", "sentence": "It's a rug." },
+            { "word": "a refrigerator", "emoji": "🥶", "sentence": "You can say fridge for short." },
+            { "word": "a window", "emoji": "🪟", "sentence": "There is a window in the kitchen." },
+            { "word": "a sink", "emoji": "🚰", "sentence": "The sink is big." },
+            { "word": "a phone", "emoji": "📱", "sentence": "There is a phone in the kitchen." },
+            { "word": "a door", "emoji": "🚪", "sentence": "The door to my house is brown." }
+          ]
+        },
+        {
+          "id": 5,
+          "label": "Unit 5 — Daily Routine",
+          "words": [
+            { "word": "get up", "emoji": "⏰", "sentence": "I get up at 6:45." },
+            { "word": "wash my face", "emoji": "🧼", "sentence": "I wash my face." },
+            { "word": "brush my teeth", "emoji": "🪥", "sentence": "I brush my teeth." },
+            { "word": "get dressed", "emoji": "👕", "sentence": "I get dressed." },
+            { "word": "eat breakfast", "emoji": "🍳", "sentence": "I eat breakfast." },
+            { "word": "go to school", "emoji": "🏫", "sentence": "I go to school." },
+            { "word": "eat lunch", "emoji": "🥪", "sentence": "I eat lunch." },
+            { "word": "play with friends", "emoji": "🤝", "sentence": "I play with friends." },
+            { "word": "play video games", "emoji": "🎮", "sentence": "I play video games." },
+            { "word": "eat dinner", "emoji": "🍽️", "sentence": "I eat dinner." },
+            { "word": "go to bed", "emoji": "😴", "sentence": "I go to bed." },
+            { "word": "in the morning", "emoji": "🌅", "sentence": "I get up at 6 o'clock in the morning." },
+            { "word": "late", "emoji": "😱", "sentence": "Oh no, I'm late for school!" },
+            { "word": "in the afternoon", "emoji": "☀️", "sentence": "I play with friends in the afternoon." },
+            { "word": "in the evening", "emoji": "🌆", "sentence": "I read a book in the evening." },
+            { "word": "at night", "emoji": "🌙", "sentence": "I take a bath at night." }
+          ]
+        },
+        {
+          "id": 6,
+          "label": "Unit 6 — Feelings",
+          "words": [
+            { "word": "tired", "emoji": "😴", "sentence": "I'm feeling tired." },
+            { "word": "scared", "emoji": "😨", "sentence": "She's scared." },
+            { "word": "angry", "emoji": "😠", "sentence": "The girl is angry." },
+            { "word": "hungry", "emoji": "😋", "sentence": "Can I have a sandwich please?" },
+            { "word": "thirsty", "emoji": "😵", "sentence": "Can I have some water please?" },
+            { "word": "excited", "emoji": "🤩", "sentence": "They're very excited." },
+            { "word": "bored", "emoji": "😑", "sentence": "I'm bored! There is nothing to do." },
+            { "word": "worried", "emoji": "😟", "sentence": "He's worried." },
+            { "word": "surprised", "emoji": "😲", "sentence": "He's very surprised." },
+            { "word": "silly", "emoji": "🤪", "sentence": "It's ok to be silly." },
+            { "word": "laughing", "emoji": "😂", "sentence": "My brother is laughing." },
+            { "word": "frowning", "emoji": "😒", "sentence": "The girl is frowning." },
+            { "word": "crying", "emoji": "😢", "sentence": "The girl is crying." },
+            { "word": "smiling", "emoji": "😊", "sentence": "The girl is smiling." },
+            { "word": "yawning", "emoji": "🥱", "sentence": "My cat is yawning." }
+          ]
+        },
+        {
+          "id": 7,
+          "label": "Unit 7 — Zoo Animals",
+          "words": [
+            { "word": "a parrot", "emoji": "🦜", "sentence": "This is a parrot." },
+            { "word": "a giraffe", "emoji": "🦒", "sentence": "This is a giraffe." },
+            { "word": "a camel", "emoji": "🐪", "sentence": "This is a camel." },
+            { "word": "a zebra", "emoji": "🦓", "sentence": "This is a zebra." },
+            { "word": "a tiger", "emoji": "🐯", "sentence": "This is a tiger." },
+            { "word": "a lion", "emoji": "🦁", "sentence": "This is a lion." },
+            { "word": "a monkey", "emoji": "🐒", "sentence": "This is a monkey." },
+            { "word": "a panda", "emoji": "🐼", "sentence": "This is a panda." },
+            { "word": "a crocodile", "emoji": "🐊", "sentence": "This is a crocodile." },
+            { "word": "a penguin", "emoji": "🐧", "sentence": "This is a penguin." },
+            { "word": "an elephant", "emoji": "🐘", "sentence": "This is an elephant." },
+            { "word": "a hippo", "emoji": "🦛", "sentence": "This is a hippo." },
+            { "word": "a kangaroo", "emoji": "🦘", "sentence": "This is a kangaroo." },
+            { "word": "colorful feathers", "emoji": "🦜", "sentence": "This bird has colorful feathers." },
+            { "word": "a long trunk", "emoji": "🐘", "sentence": "An elephant has a long trunk." },
+            { "word": "sharp claws", "emoji": "🐯", "sentence": "This animal has sharp claws." }
+          ]
+        },
+        {
+          "id": 8,
+          "label": "Unit 8 — Jobs",
+          "words": [
+            { "word": "a farmer", "emoji": "👨‍🌾", "sentence": "He's a farmer." },
+            { "word": "a bus driver", "emoji": "🚌", "sentence": "He's a bus driver." },
+            { "word": "an office worker", "emoji": "💼", "sentence": "She's an office worker." },
+            { "word": "a doctor", "emoji": "👨‍⚕️", "sentence": "He's a doctor." },
+            { "word": "a firefighter", "emoji": "👨‍🚒", "sentence": "He's a firefighter." },
+            { "word": "a vet", "emoji": "👩‍⚕️", "sentence": "She's a vet." },
+            { "word": "a police officer", "emoji": "👮", "sentence": "She's a police officer." },
+            { "word": "a dentist", "emoji": "🦷", "sentence": "She's a dentist." },
+            { "word": "a nurse", "emoji": "👩‍⚕️", "sentence": "She's a nurse." },
+            { "word": "a chef", "emoji": "👨‍🍳", "sentence": "He's a chef." },
+            { "word": "a singer", "emoji": "🎤", "sentence": "He's a singer." },
+            { "word": "a scientist", "emoji": "👩‍🔬", "sentence": "She's a scientist." },
+            { "word": "an inventor", "emoji": "💡", "sentence": "He's an inventor." },
+            { "word": "a rock star", "emoji": "🎸", "sentence": "She's a rock star." },
+            { "word": "a movie star", "emoji": "🎬", "sentence": "She's a movie star." },
+            { "word": "an artist", "emoji": "🎨", "sentence": "He's an artist." },
+            { "word": "a soccer player", "emoji": "⚽", "sentence": "He's a soccer player." }
+          ]
+        },
+        {
+          "id": 9,
+          "label": "Unit 9 — Food & Snacks",
+          "words": [
+            { "word": "mangoes", "emoji": "🥭", "sentence": "I don't know what mangoes taste like." },
+            { "word": "peppers", "emoji": "🌶️", "sentence": "I really don't like peppers." },
+            { "word": "hamburger", "emoji": "🍔", "sentence": "I love hamburgers." },
+            { "word": "beans", "emoji": "🫘", "sentence": "Beans are very small!" },
+            { "word": "ice cream", "emoji": "🍦", "sentence": "I love ice cream too." },
+            { "word": "carrots", "emoji": "🥕", "sentence": "Carrots have a good color but aren't tasty." },
+            { "word": "corn", "emoji": "🌽", "sentence": "Corn has many small yellow seeds." },
+            { "word": "meat", "emoji": "🥩", "sentence": "I love meat really!!" },
+            { "word": "pasta", "emoji": "🍝", "sentence": "Pasta is delicious." },
+            { "word": "bread", "emoji": "🍞", "sentence": "I sometimes eat bread for breakfast." },
+            { "word": "tomatoes", "emoji": "🍅", "sentence": "I never eat tomatoes!" },
+            { "word": "snacks", "emoji": "🍿", "sentence": "I like snacks." },
+            { "word": "grapes", "emoji": "🍇", "sentence": "I love grapes." },
+            { "word": "chips", "emoji": "🍟", "sentence": "I have chips after school." },
+            { "word": "yogurt", "emoji": "🫙", "sentence": "I like yogurt." },
+            { "word": "cheese", "emoji": "🧀", "sentence": "My favorite snack is cheese." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Level 3",
+      "units": [
+        {
+          "id": 1,
+          "label": "Unit 1 — Actions & Routines",
+          "words": [
+            { "word": "carry", "emoji": "💪", "sentence": "I like to carry my rabbit." },
+            { "word": "help", "emoji": "🤝", "sentence": "I always help my grandmother." },
+            { "word": "hug", "emoji": "🤗", "sentence": "I hug my mom every day before school." },
+            { "word": "teach", "emoji": "🧑‍🏫", "sentence": "I like to teach my friends new things." },
+            { "word": "hold hands", "emoji": "🤝", "sentence": "We hold hands when we cross the street." },
+            { "word": "feed my pet", "emoji": "🐾", "sentence": "I feed my pet twice a day." },
+            { "word": "a goldfish", "emoji": "🐟", "sentence": "I feed my goldfish after school." },
+            { "word": "take care of my pet", "emoji": "🐾", "sentence": "I take care of my pet after school." },
+            { "word": "a hamster", "emoji": "🐹", "sentence": "I have a hamster called George." },
+            { "word": "pick up", "emoji": "💪", "sentence": "I like to pick up my little brother." },
+            { "word": "protect", "emoji": "🛡️", "sentence": "I want to protect my little sister." },
+            { "word": "take a shower", "emoji": "🚿", "sentence": "I take a shower at 7:30." },
+            { "word": "make my bed", "emoji": "🛏️", "sentence": "I make my bed at 8:15." },
+            { "word": "come home", "emoji": "🏠", "sentence": "I come home at 3:20." },
+            { "word": "have a snack", "emoji": "🍎", "sentence": "I have a snack at 3:45." },
+            { "word": "do my homework", "emoji": "📚", "sentence": "I do my homework at 5 o'clock." }
+          ]
+        },
+        {
+          "id": 2,
+          "label": "Unit 2 — Places in Town",
+          "words": [
+            { "word": "a hospital", "emoji": "🏥", "sentence": "You can see doctors and nurses at the hospital." },
+            { "word": "a post office", "emoji": "📮", "sentence": "You can mail letters at the post office." },
+            { "word": "a bakery", "emoji": "🥐", "sentence": "You can buy bread at a bakery." },
+            { "word": "a museum", "emoji": "🏛️", "sentence": "You can see paintings at a museum." },
+            { "word": "a restaurant", "emoji": "🍽️", "sentence": "You can eat food at a restaurant." },
+            { "word": "a supermarket", "emoji": "🛒", "sentence": "You can find lots of food at the supermarket." },
+            { "word": "a drugstore", "emoji": "💊", "sentence": "You can get medicine at the drugstore." },
+            { "word": "a train station", "emoji": "🚉", "sentence": "You get a train at the train station." },
+            { "word": "a movie theater", "emoji": "🎬", "sentence": "You can see movies at a movie theater." },
+            { "word": "a toy store", "emoji": "🪀", "sentence": "You can buy toys at a toy store." },
+            { "word": "a police station", "emoji": "👮", "sentence": "You can see a police officer at a police station." },
+            { "word": "a park", "emoji": "🌳", "sentence": "You can play on the swings at the park." },
+            { "word": "a library", "emoji": "📚", "sentence": "He wants to go to the library." },
+            { "word": "a swimming pool", "emoji": "🏊", "sentence": "I want to go to the swimming pool." },
+            { "word": "a mall", "emoji": "🛍️", "sentence": "I want to go to the mall." },
+            { "word": "a zoo", "emoji": "🦁", "sentence": "We all want to go to the zoo." },
+            { "word": "a stadium", "emoji": "🏟️", "sentence": "They want to go to the stadium." }
+          ]
+        },
+        {
+          "id": 3,
+          "label": "Unit 3 — Transportation",
+          "words": [
+            { "word": "a sailboat", "emoji": "⛵", "sentence": "That sailboat is fast." },
+            { "word": "a helicopter", "emoji": "🚁", "sentence": "That helicopter is really loud." },
+            { "word": "a bus", "emoji": "🚌", "sentence": "We take the bus to school." },
+            { "word": "an airplane", "emoji": "✈️", "sentence": "Can you see an airplane in the sky?" },
+            { "word": "a ferry", "emoji": "⛴️", "sentence": "Look at all the cars on the ferry." },
+            { "word": "a subway", "emoji": "🚇", "sentence": "Let's take the subway to the museum." },
+            { "word": "a hot air balloon", "emoji": "🎈", "sentence": "That hot air balloon is very colorful." },
+            { "word": "a scooter", "emoji": "🛵", "sentence": "I ride my scooter in the park." },
+            { "word": "a taxi", "emoji": "🚕", "sentence": "My uncle drives the taxi." },
+            { "word": "a ship", "emoji": "🚢", "sentence": "That's a big ship!" },
+            { "word": "a motorcycle", "emoji": "🏍️", "sentence": "I want to ride a motorcycle." },
+            { "word": "get on", "emoji": "🚲", "sentence": "I get on my bike." },
+            { "word": "pedal uphill", "emoji": "🚲", "sentence": "I pedal uphill." },
+            { "word": "coast downhill", "emoji": "🚲", "sentence": "I coast downhill." },
+            { "word": "get off", "emoji": "🚲", "sentence": "I get off my bike." },
+            { "word": "park", "emoji": "🅿️", "sentence": "I park my bike." }
+          ]
+        },
+        {
+          "id": 4,
+          "label": "Unit 4 — Adjectives & Senses",
+          "words": [
+            { "word": "smooth", "emoji": "✨", "sentence": "The door is smooth." },
+            { "word": "rough", "emoji": "🌲", "sentence": "The tree is rough." },
+            { "word": "beautiful", "emoji": "🌸", "sentence": "This bird is beautiful." },
+            { "word": "ugly", "emoji": "😬", "sentence": "This bird is ugly." },
+            { "word": "dry", "emoji": "☀️", "sentence": "Why is it dry?" },
+            { "word": "sticky", "emoji": "🍯", "sentence": "This is very sticky." },
+            { "word": "hard", "emoji": "💎", "sentence": "This chair is hard." },
+            { "word": "soft", "emoji": "🧸", "sentence": "This chair is soft." },
+            { "word": "terrible", "emoji": "😫", "sentence": "This food is terrible." },
+            { "word": "delicious", "emoji": "😋", "sentence": "This ice cream is delicious." },
+            { "word": "quiet", "emoji": "🤫", "sentence": "Be quiet!" },
+            { "word": "loud", "emoji": "📢", "sentence": "This music is too loud. " },
+            { "word": "sweet", "emoji": "🍯", "sentence": "This honey is very sweet." },
+            { "word": "salty", "emoji": "🧂", "sentence": "The chips are salty." },
+            { "word": "bitter", "emoji": "☕", "sentence": "Black coffee tastes bitter." },
+            { "word": "sour", "emoji": "🍋", "sentence": "Lemons are sour." },
+            { "word": "spicy", "emoji": "🌶️", "sentence": "These peppers are very spicy." }
+          ]
+        },
+        {
+          "id": 5,
+          "label": "Unit 5 — Habitats",
+          "words": [
+            { "word": "a forest", "emoji": "🌲", "sentence": "There are many trees and plants in a forest." },
+            { "word": "a desert", "emoji": "🏜️", "sentence": "It is very hot in the desert." },
+            { "word": "ice", "emoji": "🧊", "sentence": "Water changes to ice in very cold temperatures." },
+            { "word": "a web", "emoji": "🕸️", "sentence": "Spiders make webs." },
+            { "word": "grasslands", "emoji": "🌾", "sentence": "Zebras and lions live in the grasslands." },
+            { "word": "wetlands", "emoji": "🦆", "sentence": "Many birds live in the wetlands." },
+            { "word": "a hive", "emoji": "🐝", "sentence": "Bees live in hives." },
+            { "word": "a cave", "emoji": "🦇", "sentence": "Caves are really dark places." },
+            { "word": "underground", "emoji": "🐛", "sentence": "Many animals have homes underground." },
+            { "word": "mud", "emoji": "🦛", "sentence": "Hippos like to bathe in the mud." },
+            { "word": "a rainforest", "emoji": "🌴", "sentence": "There are many trees in the rainforest." },
+            { "word": "an island", "emoji": "🏝️", "sentence": "An island has water around it." },
+            { "word": "a nest", "emoji": "🐦", "sentence": "Birds live in nests." },
+            { "word": "snow", "emoji": "❄️", "sentence": "It is very cold in the snow." },
+            { "word": "a tongue", "emoji": "🦒", "sentence": "A giraffe has a long tongue." },
+            { "word": "fur", "emoji": "🐻", "sentence": "A polar bear has thick white fur." },
+            { "word": "horns", "emoji": "🐐", "sentence": "A goat has two horns." },
+            { "word": "a pouch", "emoji": "🦘", "sentence": "A kangaroo has a pouch." },
+            { "word": "wings", "emoji": "🦜", "sentence": "A parrot has colorful wings." }
+          ]
+        },
+        {
+          "id": 6,
+          "label": "Unit 6 — Food & Shopping",
+          "words": [
+            { "word": "a loaf of bread", "emoji": "🍞", "sentence": "Can you buy me a loaf of bread?" },
+            { "word": "a bottle of oil", "emoji": "🫙", "sentence": "There is a bottle of oil on the table." },
+            { "word": "a bag of rice", "emoji": "🍚", "sentence": "This bag of rice is very heavy." },
+            { "word": "a jar of olives", "emoji": "🫙", "sentence": "This is a big jar of olives." },
+            { "word": "a box of cereal", "emoji": "🥣", "sentence": "Let's get a big box of cereal." },
+            { "word": "a bowl of sugar", "emoji": "🍬", "sentence": "Where is the bowl of sugar?" },
+            { "word": "a bunch of bananas", "emoji": "🍌", "sentence": "Look at that big bunch of bananas." },
+            { "word": "a glass of juice", "emoji": "🧃", "sentence": "Can I have a glass of juice, please?" },
+            { "word": "a can of soda", "emoji": "🥤", "sentence": "I want a can of soda." },
+            { "word": "a piece of cake", "emoji": "🍰", "sentence": "That piece of cake looks delicious." },
+            { "word": "money", "emoji": "💰", "sentence": "I need some money." },
+            { "word": "put away", "emoji": "📦", "sentence": "Put away the tomatoes." },
+            { "word": "a price", "emoji": "💵", "sentence": "Is that the price? That's a lot." },
+            { "word": "compare", "emoji": "🔍", "sentence": "It's important to compare the prices when you shop." },
+            { "word": "buy", "emoji": "🛒", "sentence": "I buy strawberries at the market." }
+          ]
+        },
+        {
+          "id": 7,
+          "label": "Unit 7 — Body & Health",
+          "words": [
+            { "word": "a muscle", "emoji": "💪", "sentence": "I have strong muscles." },
+            { "word": "fingers", "emoji": "🖐️", "sentence": "I have ten fingers." },
+            { "word": "a chest", "emoji": "🫀", "sentence": "This is my chest." },
+            { "word": "a stomach", "emoji": "🤢", "sentence": "My stomach is full." },
+            { "word": "a knee", "emoji": "🦵", "sentence": "Point to your knees." },
+            { "word": "a bone", "emoji": "🦴", "sentence": "I have strong bones." },
+            { "word": "a shoulder", "emoji": "💪", "sentence": "I'm touching my shoulder." },
+            { "word": "an elbow", "emoji": "💪", "sentence": "I have two elbows." },
+            { "word": "a back", "emoji": "🔙", "sentence": "I can touch my back." },
+            { "word": "toes", "emoji": "🦶", "sentence": "I have ten toes." },
+            { "word": "stretch", "emoji": "🧘", "sentence": "Stretch your legs!" },
+            { "word": "bend", "emoji": "🧎", "sentence": "Bend your arms!" },
+            { "word": "get exercise", "emoji": "🏃", "sentence": "I get exercise every day." },
+            { "word": "eat junk food", "emoji": "🍟", "sentence": "I sometimes eat junk food." },
+            { "word": "eat vegetables", "emoji": "🥦", "sentence": "Do you eat a lot of vegetables?" },
+            { "word": "get rest", "emoji": "😴", "sentence": "It's important to get rest every night." },
+            { "word": "eat fruit", "emoji": "🍎", "sentence": "I eat fruit every day after school." }
+          ]
+        },
+        {
+          "id": 8,
+          "label": "Unit 8 — Celebrations",
+          "words": [
+            { "word": "a costume", "emoji": "🎭", "sentence": "Do you like my costume?" },
+            { "word": "a feast", "emoji": "🍽️", "sentence": "There is lots of food at this feast." },
+            { "word": "a mask", "emoji": "🎭", "sentence": "I love the colors of this mask." },
+            { "word": "a lantern", "emoji": "🏮", "sentence": "This lantern is beautiful." },
+            { "word": "a party", "emoji": "🎉", "sentence": "I like to go to parties." },
+            { "word": "fireworks", "emoji": "🎆", "sentence": "The fireworks are loud and colorful." },
+            { "word": "celebrate", "emoji": "🎊", "sentence": "We celebrate my birthday every year." },
+            { "word": "remember", "emoji": "💭", "sentence": "I remember my great grandparents." },
+            { "word": "dance", "emoji": "💃", "sentence": "I always dance at my parties." },
+            { "word": "dress up", "emoji": "🦸", "sentence": "Let's dress up as superheroes." },
+            { "word": "decorations", "emoji": "🎀", "sentence": "I love these party decorations." },
+            { "word": "a parade", "emoji": "🥁", "sentence": "It's time to watch the parade." },
+            { "word": "a present", "emoji": "🎁", "sentence": "Here's a present for you. Happy Birthday!" },
+            { "word": "a birthday cake", "emoji": "🎂", "sentence": "I love birthday cakes." },
+            { "word": "candles", "emoji": "🕯️", "sentence": "There are seven candles on the cake. " },
+            { "word": "an invitation", "emoji": "💌", "sentence": "It's an invitation to a party!" },
+            { "word": "balloons", "emoji": "🎈", "sentence": "There are eleven balloons." }
+          ]
+        },
+        {
+          "id": 9,
+          "label": "Unit 9 — Weekend Activities",
+          "words": [
+            { "word": "eat out", "emoji": "🍽️", "sentence": "We eat out on Sundays." },
+            { "word": "go to the movies", "emoji": "🎬", "sentence": "I like to go to the movies on the weekend." },
+            { "word": "visit a museum", "emoji": "🏛️", "sentence": "Sometimes we visit a museum in the city." },
+            { "word": "go on a picnic", "emoji": "🧺", "sentence": "Do you want to go on a picnic today?" },
+            { "word": "stay home", "emoji": "🏠", "sentence": "I sometimes like to stay home on the weekend." },
+            { "word": "lose", "emoji": "😞", "sentence": "I don't like it when we lose the game." },
+            { "word": "win", "emoji": "🏆", "sentence": "My soccer team always wins." },
+            { "word": "exciting", "emoji": "🤩", "sentence": "This is so exciting! Let's do it again." },
+            { "word": "interesting", "emoji": "🧐", "sentence": "This is really interesting! Look!" },
+            { "word": "text my friends", "emoji": "📱", "sentence": "I text my friends on the weekend." },
+            { "word": "busy", "emoji": "😅", "sentence": "I am very busy today." },
+            { "word": "go to the beach", "emoji": "🏖️", "sentence": "I want to go to the beach and swim in the sea." },
+            { "word": "go horseback riding", "emoji": "🐴", "sentence": "Can we go horseback riding one day?" },
+            { "word": "go fishing", "emoji": "🎣", "sentence": "Let's go fishing tomorrow." },
+            { "word": "go hiking", "emoji": "🥾", "sentence": "I love to go hiking in the mountains." },
+            { "word": "go swimming", "emoji": "🏊", "sentence": "Can we go swimming in the river?" },
+            { "word": "go ice skating", "emoji": "⛸️", "sentence": "Where can we go ice skating in this town?" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Level 4",
+      "units": [
+        {
+          "id": 1,
+          "label": "Unit 1 — Comparisons & Appearance",
+          "words": [
+            { "word": "relatives", "emoji": "👨‍👩‍👧‍👦", "sentence": "I have so many relatives. We are a big family." },
+            { "word": "different", "emoji": "🔄", "sentence": "They are sisters, but they look different." },
+            { "word": "uglier", "emoji": "😬", "sentence": "Which is uglier, a crocodile or a hippo?" },
+            { "word": "cuter", "emoji": "🐰", "sentence": "Which is cuter, a panda or a rabbit?" },
+            { "word": "smarter", "emoji": "🧠", "sentence": "I feel smarter today than I did yesterday." },
+            { "word": "friendlier", "emoji": "😊", "sentence": "You need to be friendlier. Smile more." },
+            { "word": "bigger", "emoji": "📏", "sentence": "My cousin Anna is bigger than me." },
+            { "word": "smaller", "emoji": "📏", "sentence": "My brother is smaller than me. He is only 3." },
+            { "word": "stronger", "emoji": "💪", "sentence": "Anna is stronger than me, too." },
+            { "word": "older", "emoji": "🎂", "sentence": "My older brother is in 6th grade." },
+            { "word": "younger", "emoji": "🧒", "sentence": "My younger sister is in 3rd grade." },
+            { "word": "taller", "emoji": "📏", "sentence": "I am taller than Eduardo." },
+            { "word": "shorter", "emoji": "📏", "sentence": "My brother is shorter than my sister." },
+            { "word": "faster", "emoji": "🏃", "sentence": "Maria is faster than Juan." },
+            { "word": "slower", "emoji": "🐢", "sentence": "Hopping is slower than running." },
+            { "word": "glasses", "emoji": "👓", "sentence": "Pedro started wearing glasses this year." },
+            { "word": "wavy hair", "emoji": "💇", "sentence": "Enrique has brown wavy hair." },
+            { "word": "blond hair", "emoji": "👱", "sentence": "Sarah's blond hair is long." },
+            { "word": "straight hair", "emoji": "💇", "sentence": "Jacob has straight hair." },
+            { "word": "curly hair", "emoji": "💇", "sentence": "You have very curly hair." }
+          ]
+        },
+        {
+          "id": 2,
+          "label": "Unit 2 — Gardening & Vegetables",
+          "words": [
+            { "word": "dig", "emoji": "⛏️", "sentence": "Dig the rocks out of the dirt." },
+            { "word": "plant", "emoji": "🌱", "sentence": "Plant the seeds in a row." },
+            { "word": "water", "emoji": "💧", "sentence": "Water the plants well." },
+            { "word": "weed", "emoji": "🌿", "sentence": "Weed the garden once a week." },
+            { "word": "grow", "emoji": "🌻", "sentence": "I like to grow vegetables." },
+            { "word": "ripe", "emoji": "🍅", "sentence": "Wait until the vegetables are ripe." },
+            { "word": "a pumpkin", "emoji": "🎃", "sentence": "Pumpkin pie is my favorite dessert." },
+            { "word": "lettuce", "emoji": "🥬", "sentence": "Lettuce is very good in salad." },
+            { "word": "a cucumber", "emoji": "🥒", "sentence": "Cucumber is very good in salad too." },
+            { "word": "cabbage", "emoji": "🥬", "sentence": "Cabbage is delicious in soup." },
+            { "word": "hot peppers", "emoji": "🌶️", "sentence": "Hot peppers make a good hot sauce." },
+            { "word": "an onion", "emoji": "🧅", "sentence": "Onion can be white, yellow, red, and green." },
+            { "word": "an eggplant", "emoji": "🍆", "sentence": "Eggplant can be purple or white on the outside." },
+            { "word": "green beans", "emoji": "🫘", "sentence": "Green beans are, surprise, green!" },
+            { "word": "a zucchini", "emoji": "🥒", "sentence": "Zucchini can be green or yellow." },
+            { "word": "how often", "emoji": "❓", "sentence": "How often do you eat fruit?" },
+            { "word": "every day", "emoji": "📅", "sentence": "I eat fruit every day." },
+            { "word": "once a month", "emoji": "📅", "sentence": "Once a month, we take vegetables to our neighbor." },
+            { "word": "twice a year", "emoji": "📅", "sentence": "Twice a year, my dad plants new seeds." },
+            { "word": "three times a week", "emoji": "📅", "sentence": "Three times a week, we weed the garden." }
+          ]
+        },
+        {
+          "id": 3,
+          "label": "Unit 3 — Then & Now",
+          "words": [
+            { "word": "spend time", "emoji": "⏰", "sentence": "I like to spend time with my grandparents." },
+            { "word": "life", "emoji": "🌍", "sentence": "Long ago, life was very different." },
+            { "word": "begin", "emoji": "🚀", "sentence": "It's time to begin your homework." },
+            { "word": "electric lights", "emoji": "💡", "sentence": "Electric lights make the day longer." },
+            { "word": "chores", "emoji": "🧹", "sentence": "I do my chores in the morning." },
+            { "word": "make my bed", "emoji": "🛏️", "sentence": "I make my bed in the morning." },
+            { "word": "wash", "emoji": "🫧", "sentence": "My brother washes the dishes three times a week." },
+            { "word": "sew", "emoji": "🧵", "sentence": "My grandma is teaching me how to sew." },
+            { "word": "town", "emoji": "🏘️", "sentence": "My grandparents live in a small town." },
+            { "word": "learn", "emoji": "📖", "sentence": "Do you want to learn how to play chess?" },
+            { "word": "fire", "emoji": "🔥", "sentence": "Long ago, people cooked their food over fire." },
+            { "word": "cell phone", "emoji": "📱", "sentence": "Cell phones make communication easier." },
+            { "word": "video game", "emoji": "🎮", "sentence": "Can I see your new video games?" },
+            { "word": "modern", "emoji": "🏙️", "sentence": "Long ago, life was slow. Modern life is fast." },
+            { "word": "difficult", "emoji": "😤", "sentence": "This math problem is very difficult." },
+            { "word": "expensive", "emoji": "💰", "sentence": "That video game is very expensive." },
+            { "word": "old-fashioned", "emoji": "👴", "sentence": "I don't like that dress because it's old-fashioned." },
+            { "word": "important", "emoji": "⭐", "sentence": "It's important to do your homework." }
+          ]
+        },
+        {
+          "id": 4,
+          "label": "Unit 4 — Health & Injuries",
+          "words": [
+            { "word": "a stomachache", "emoji": "🤢", "sentence": "Alex has a stomachache. She feels sick." },
+            { "word": "a headache", "emoji": "🤕", "sentence": "My daughter has a headache again." },
+            { "word": "a toothache", "emoji": "🦷", "sentence": "Li went to the dentist because he has a toothache." },
+            { "word": "an earache", "emoji": "👂", "sentence": "Pablo has an earache. It hurts a lot." },
+            { "word": "a germ", "emoji": "🦠", "sentence": "There are many germs in the classroom." },
+            { "word": "a thermometer", "emoji": "🌡️", "sentence": "Put this thermometer in your mouth." },
+            { "word": "have a fever", "emoji": "🤒", "sentence": "I think you have a fever." },
+            { "word": "a cough", "emoji": "😮‍💨", "sentence": "Don't cough on everyone." },
+            { "word": "have a cold", "emoji": "🤧", "sentence": "My brother has a cold." },
+            { "word": "feel dizzy", "emoji": "💫", "sentence": "I feel really dizzy. I need to sit down." },
+            { "word": "a tissue", "emoji": "🤧", "sentence": "Do you have any tissues, Mom?" },
+            { "word": "sneeze", "emoji": "🤧", "sentence": "I sneeze when I have a cold." },
+            { "word": "a cast", "emoji": "🦴", "sentence": "Lin has a cast on his leg." },
+            { "word": "medicine", "emoji": "💊", "sentence": "The doctor gave Ming some medicine." },
+            { "word": "a bandage", "emoji": "🩹", "sentence": "Let's put a bandage on your foot." },
+            { "word": "a first-aid kit", "emoji": "🧰", "sentence": "Quick! Where is the first-aid kit?" },
+            { "word": "a burn", "emoji": "🔥", "sentence": "How did Andrea get a burn on her finger?" },
+            { "word": "a broken leg", "emoji": "🦴", "sentence": "Lusia has a broken leg." },
+            { "word": "a scratch", "emoji": "🩹", "sentence": "Look at this scratch! I fell off my bike!" },
+            { "word": "a bruise", "emoji": "🟣", "sentence": "Felipe fell and has a bruise on his leg." },
+            { "word": "a cut", "emoji": "🩹", "sentence": "Maria has a cut on her finger." }
+          ]
+        },
+        {
+          "id": 5,
+          "label": "Unit 5 — Famous People & Hobbies",
+          "words": [
+            { "word": "amazing", "emoji": "🤩", "sentence": "J.K. Rowling writes amazing books." },
+            { "word": "famous", "emoji": "🌟", "sentence": "I want to be famous one day." },
+            { "word": "cool", "emoji": "😎", "sentence": "This movie is so cool. I like action." },
+            { "word": "an actor", "emoji": "🎬", "sentence": "He is a well-known actor in Hollywood." },
+            { "word": "popular", "emoji": "📣", "sentence": "Harry Potter books are very popular." },
+            { "word": "talented", "emoji": "🎵", "sentence": "Mozart was a talented composer." },
+            { "word": "funny", "emoji": "😂", "sentence": "That was a really funny movie." },
+            { "word": "a movie", "emoji": "🎬", "sentence": "I really liked that movie." },
+            { "word": "brave", "emoji": "🦁", "sentence": "Firefighters are really brave." },
+            { "word": "pretty", "emoji": "💅", "sentence": "My mom is really pretty." },
+            { "word": "handsome", "emoji": "😍", "sentence": "He is a very handsome man." },
+            { "word": "an athlete", "emoji": "🏅", "sentence": "LeBron James is a great athlete." },
+            { "word": "great", "emoji": "🏆", "sentence": "Picasso was a great painter." },
+            { "word": "wonderful", "emoji": "✨", "sentence": "Your photo from the museum is wonderful." },
+            { "word": "a TV show", "emoji": "📺", "sentence": "What's your favorite TV show?" },
+            { "word": "a hobby", "emoji": "🎨", "sentence": "I love to read books. It's my favorite hobby." },
+            { "word": "a school subject", "emoji": "📚", "sentence": "English is the best school subject." },
+            { "word": "a sport", "emoji": "⚽", "sentence": "Tennis is a wonderful sport." },
+            { "word": "a writer", "emoji": "✍️", "sentence": "J.K. Rowling is a wonderful writer." }
+          ]
+        }
+      ]
+    }
+  ]
+}

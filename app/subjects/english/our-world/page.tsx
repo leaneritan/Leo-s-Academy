@@ -84,6 +84,21 @@ export default function OurWorldPage() {
         <p className="text-on-surface-variant font-medium">Grammar and language for English learners.</p>
       </header>
 
+      {/* Tabs */}
+      <div className="bg-surface-container rounded-xl p-1 w-fit mb-12 flex items-center">
+        <div className="flex items-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold bg-white text-primary shadow-sm cursor-default">
+          <span className="material-symbols-outlined text-[20px]">menu_book</span>
+          Grammar
+        </div>
+        <Link
+          href="/subjects/english/our-world/vocabulary"
+          className="flex items-center gap-2 px-6 py-2.5 rounded-lg text-sm font-bold text-on-surface-variant hover:text-on-surface transition-all"
+        >
+          <span className="material-symbols-outlined text-[20px]">translate</span>
+          Vocabulary
+        </Link>
+      </div>
+
       {/* Search Bar */}
       <div className="relative mb-10 group">
         <div className="absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant/40 group-focus-within:text-primary transition-colors">
