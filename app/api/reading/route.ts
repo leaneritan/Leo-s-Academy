@@ -13,33 +13,62 @@ export async function POST(request: Request) {
   const body = await request.json();
   const data = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));
 
-  if (body.type === 'assign') {
-    // Teacher mode assignment
+  if (body.type === 'assign' || body.type === 'add') {
+    // Teacher mode assignment or Leo adding a book
     const newBook = {
-      id: body.title.toLowerCase().replace(/\s+/g, '-'),
-      title: body.title,
-      titleJapanese: body.titleJapanese,
-      author: body.author,
-      authorJapanese: body.authorJapanese || body.author,
+      id: body.id || (body.title || body.titleJapanese || 'book').toLowerCase().replace(/\s+/g, '-') + '-' + Date.now(),
+      title: body.title || body.titleJapanese || "",
+      titleJapanese: body.titleJapanese || body.title || "",
+      author: body.author || body.authorJapanese || "",
+      authorJapanese: body.authorJapanese || body.author || "",
+      genre: body.genre || "",
+      coverColor: body.coverColor || "#056662",
       coverImage: body.coverImage || "",
       language: "Japanese",
       status: "reading",
-      progress: 0
+      progress: body.progress || 0
     };
     data.books.push(newBook);
   } else {
-    // Student finishing a book
+    // Update or Finish
     const bookIndex = data.books.findIndex((b: any) => b.id === body.id);
     if (bookIndex !== -1) {
+      const isFinishing = body.status === 'finished' && data.books[bookIndex].status !== 'finished';
+
       data.books[bookIndex] = {
         ...data.books[bookIndex],
-        ...body,
-        status: 'finished'
+        ...body
       };
-      data.monthlyGoal.completed += 1;
+
+      if (isFinishing) {
+        data.monthlyGoal.completed += 1;
+        if (!data.books[bookIndex].dateFinished) {
+          data.books[bookIndex].dateFinished = new Date().toISOString().split('T')[0];
+        }
+      }
     }
   }
 
   fs.writeFileSync(DATA_PATH, JSON.stringify(data, null, 2));
   return NextResponse.json({ success: true });
+}
+
+export async function DELETE(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const id = searchParams.get('id');
+
+  if (!id) {
+    return NextResponse.json({ error: 'Book ID is required' }, { status: 400 });
+  }
+
+  const data = JSON.parse(fs.readFileSync(DATA_PATH, 'utf8'));
+  const initialCount = data.books.length;
+  data.books = data.books.filter((b: any) => b.id !== id);
+
+  if (data.books.length < initialCount) {
+    fs.writeFileSync(DATA_PATH, JSON.stringify(data, null, 2));
+    return NextResponse.json({ success: true });
+  }
+
+  return NextResponse.json({ error: 'Book not found' }, { status: 404 });
 }

@@ -6,11 +6,27 @@
   - Local:        http://localhost:3000
 
  ✓ Starting...
- ✓ Ready in 1720ms
- ○ Compiling /subjects/english/our-world ...
- ✓ Compiled /subjects/english/our-world in 6.2s (563 modules)
- ✓ Compiled in 726ms (271 modules)
- GET /subjects/english/our-world 200 in 6999ms
- ○ Compiling /subjects/english/our-world/vocabulary ...
- ✓ Compiled /subjects/english/our-world/vocabulary in 1919ms (548 modules)
- GET /subjects/english/our-world 200 in 147ms
+ ✓ Ready in 1736ms
+ ○ Compiling /reading ...
+ ✓ Compiled /reading in 6.4s (573 modules)
+ GET /reading 200 in 7204ms
+ ✓ Compiled in 802ms (276 modules)
+ GET /reading 200 in 40ms
+ ✓ Compiled /api/reading in 410ms (317 modules)
+ GET /api/reading 200 in 501ms
+ GET /api/reading 200 in 21ms
+ ✓ Compiled /_not-found in 279ms (582 modules)
+ GET /books/wonder.jpg 404 in 429ms
+ GET /books/hobbit.jpg 404 in 428ms
+ ✓ Compiled in 738ms (564 modules)
+ GET /reading 200 in 196ms
+ ✓ Compiled /api/reading in 88ms (317 modules)
+ GET /api/reading 200 in 184ms
+ GET /api/reading 200 in 11ms
+ ✓ Compiled /_not-found in 154ms (582 modules)
+ GET /books/wonder.jpg 404 in 279ms
+ GET /books/hobbit.jpg 404 in 278ms
+ POST /api/reading 200 in 14ms
+ GET /api/reading 200 in 12ms
+ DELETE /api/reading?id=%E3%83%86%E3%82%B9%E3%83%88%E6%9C%AC-1774710220893 200 in 17ms
+ GET /api/reading 200 in 16ms
